@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="nl" class="theme theme--mercado">
+<head>
+    <meta charset="utf-8">
+    <title>Mark de Vries | Senior Tech Recruiter | TalentConnect | LinkedIn</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ffffff">
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/svg+xml" href="https://static.licdn.com/aero-v1/sc/h/akt4ae504epesldzj74dzred8">
+    <link rel="alternate icon" href="https://static.licdn.com/aero-v1/sc/h/8s162nmbcnfkg7a0k8nq9wwqo">
+    <link rel="mask-icon" href="https://static.licdn.com/aero-v1/sc/h/8a1a8xqjolkyjbf9n3i40oimj" color="#0a66c2">
+    
+    <!-- Styling -->
+    <link id="ui-theme" rel="stylesheet" href="https://static.licdn.com/aero-v1/sc/h/ev3prx6qwul6j3me07vap4ui1">
+    <link id="ui-theme-dark" rel="stylesheet" href="https://static.licdn.com/aero-v1/sc/h/aukoz4odnf7kc6nk7ds8gowwm">
+    <link rel="stylesheet" href="https://static.licdn.com/aero-v1/sc/h/5ruejucflr8mj4zy4tuvvyq24">
+    
+    <style>
+        body {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f2ef;
+            color: rgba(0,0,0,0.9);
+        }
+        
+        .container {
+            max-width: 1128px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            gap: 24px;
+        }
+        
+        .main-content {
+            flex: 1;
+        }
+        
+        .sidebar {
+            width: 300px;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 0 1px rgba(0,0,0,0.08);
+            margin-bottom: 16px;
+            overflow: hidden;
+        }
+        
+        .card-header {
+            padding: 16px 16px 0;
+        }
+        
+        .card-body {
+            padding: 0 16px 16px;
+        }
+        
+        .profile-header {
+            position: relative;
+        }
+        
+        .profile-background {
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+        }
+        
+        .profile-info {
+            padding: 0 24px 24px;
+            margin-top: -80px;
+        }
+        
+        .profile-picture {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            border: 4px solid white;
+            object-fit: cover;
+            object-position: center center;
+        }
+        
+        h1 {
+            font-size: 32px;
+            font-weight: 600;
+            margin: 0 0 8px;
+            color: rgba(0,0,0,0.9);
+        }
+        
+        h2 {
+            font-size: 20px;
+            font-weight: 400;
+            margin: 0 0 16px;
+            color: rgba(0,0,0,0.9);
+        }
+        
+        h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin: 0 0 16px;
+            color: rgba(0,0,0,0.9);
+        }
+        
+        .location {
+            color: rgba(0,0,0,0.6);
+            font-size: 16px;
+            margin-bottom: 16px;
+        }
+        
+        .connections {
+            color: #8c99a5;
+            font-weight: 600;
+            font-size: 14px;
+            margin-bottom: 16px;
+        }
+        
+        .action-buttons {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 16px;
+        }
+        
+        .btn {
+            padding: 6px 16px;
+            border-radius: 16px;
+            font-weight: 600;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+        }
+        
+        .btn-primary {
+            background-color: #0a66c2;
+            color: white;
+        }
+        
+        .btn-secondary {
+            background-color: transparent;
+            color: #0a66c2;
+            border: 1px solid #0a66c2;
+        }
+        
+        .btn-outline {
+            background-color: transparent;
+            color: rgba(0,0,0,0.6);
+            border: 1px solid rgba(0,0,0,0.6);
+        }
+        
+        .section-title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+        
+        .highlight-item {
+            margin-bottom: 16px;
+        }
+        
+        .highlight-title {
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+        
+        .highlight-desc {
+            color: rgba(0,0,0,0.6);
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+        
+        .experience-item, .education-item {
+            margin-bottom: 16px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid rgba(0,0,0,0.08);
+        }
+        
+        .experience-item:last-child, .education-item:last-child {
+            border-bottom: none;
+        }
+        
+        .job-title {
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+        
+        .company {
+            color: rgba(0,0,0,0.9);
+            margin-bottom: 4px;
+        }
+        
+        .duration {
+            color: rgba(0,0,0,0.6);
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+        
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 16px;
+        }
+        
+        .skill-tag {
+            background-color: #eef3f8;
+            padding: 4px 8px;
+            border-radius: 16px;
+            font-size: 14px;
+        }
+        
+        .activity-item {
+            margin-bottom: 16px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid rgba(0,0,0,0.08);
+        }
+        
+        .activity-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+        
+        .activity-content {
+            margin-bottom: 8px;
+        }
+        
+        .activity-actions {
+            display: flex;
+            gap: 16px;
+            color: rgba(0,0,0,0.6);
+            font-size: 14px;
+        }
+        
+        .view-all {
+            color: #0a66c2;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        
+        .interests-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+        
+        .interest-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px;
+            border: 1px solid rgba(0,0,0,0.08);
+            border-radius: 8px;
+        }
+        
+        .follow-btn {
+            color: #0a66c2;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        
+        .premium-badge {
+            background-color: #f8f9fa;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            padding: 8px 12px;
+            font-size: 14px;
+            color: #915907;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .warning-signs {
+            background-color: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 8px;
+            padding: 12px;
+            margin: 16px 0;
+            font-size: 14px;
+        }
+
+        /* Mobiele styles */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                padding: 10px;
+                gap: 16px;
+            }
+            
+            .sidebar {
+                width: 100%;
+                order: 2;
+            }
+            
+            .main-content {
+                order: 1;
+            }
+            
+            .profile-info {
+                padding: 0 16px 16px;
+                margin-top: -60px;
+                text-align: center;
+            }
+            
+            .profile-picture {
+                width: 120px;
+                height: 120px;
+                margin: 0 auto 16px;
+            }
+            
+            h1 {
+                font-size: 24px;
+            }
+            
+            h2 {
+                font-size: 16px;
+            }
+            
+            h3 {
+                font-size: 18px;
+            }
+            
+            .action-buttons {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .btn {
+                font-size: 14px;
+                padding: 8px 12px;
+            }
+            
+            .card-body {
+                padding: 0 12px 12px;
+            }
+            
+            .card-header {
+                padding: 12px 12px 0;
+            }
+            
+            .interests-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .profile-background {
+                height: 150px;
+            }
+        }
+
+        /* Kleine mobiele schermen */
+        @media (max-width: 480px) {
+            .container {
+                padding: 8px;
+            }
+            
+            .profile-picture {
+                width: 100px;
+                height: 100px;
+            }
+            
+            .profile-info {
+                margin-top: -50px;
+            }
+            
+            h1 {
+                font-size: 20px;
+            }
+            
+            .action-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main-content">
+            <!-- Profile Header -->
+            <div class="card profile-header">
+                <div class="profile-background" style="background-color: #e0e0e0;"></div>
+                <div class="profile-info">
+                    <!-- STOCKFOTO als profielfoto -->
+                    <img src="https://lh3.googleusercontent.com/A5xfo-ND-ZIJ4tBCsAjAI-_lLgxR7v_lf2se-ft_zbdQCp0Nop4vNYVZJuvdDikWPkbEqlN_UcycTYWB4-Ls1N0XtyS1F99r8reuVg1x=rw-e365-w2880-v1" class="profile-picture" alt="Profielfoto Mark de Vries">
+                    <h1>Mark de Vries</h1>
+                    <h2>Senior Tech Recruiter | TalentConnect | WE ARE HIRING 🚀</h2>
+                    <div class="location">Amsterdam, Noord-Holland, Nederland · <a href="#" style="color: #0a66c2;">recruitment.mark2024@gmail.com</a></div>
+                    
+                    <!-- WEINIG CONNECTIES + SPELLINGSFOUT -->
+                    <div class="connections">🔗 500+ connecties</div>
+                    
+                    <div class="action-buttons">
+                        <button class="btn btn-primary">Connectie maken</button>
+                        <button class="btn btn-secondary">Bericht</button>
+                        <button class="btn btn-outline">Meer</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- About Section - ONVOLIEDIG -->
+            <div class="card">
+                <div class="card-header">
+                    <h3>Info</h3>
+                </div>
+                <div class="card-body">
+                    <p>I help people finding good jobs with high salary. Contact me for best opportunities!!! We have many positions open now.</p>
+                    <p>📧 recruitment.mark2024@gmail.com</p>
+                    <p>📱 WhatsApp: +31 6 2547891</p>
+                </div>
+            </div>
+
+            <!-- Activity Section - ONPROFESSIONELE POSTS -->
+            <div class="card">
+                <div class="card-header">
+                    <h3>Activiteit · 12 posts deze week</h3>
+                    <div>16 volgers</div>
+                </div>
+                <div class="card-body">
+                    <div class="activity-item">
+                        <div class="activity-content">
+                            🚀 <strong>URGENTE VACATURE: Senior Fullstack Developer</strong>
+                            <br><br>
+                            Onze partner in Amsterdam zoekt DIRECT 3x Senior Fullstack Developers! EASY WORK FROM HOME!!!
+                            <br><br>
+                            💰 <strong>€85.000 - €95.000</strong> + bonus + benefits voor simpele werk
+                            🏠 Full remote werken (geen kantoor)
+                            🚀 Tech: alles wat je kent is goed
+                            <br><br>
+                            ⏰ <strong>SLECHTS 3 PLEKKEN BESCHIKBAAR! REAGEER SNELL!!!</strong>
+                            👉 <strong>STUUR DM NU!</strong>
+                            📧 Of mail: recruitment.talent@hotmail.com
+                            <br><br>
+                            #hiring #techjobs #amsterdam #fullstack #developer #urgent #easyjob
+                        </div>
+                        <div class="activity-actions">
+                            <span>👍 3</span>
+                            <span>💬 1</span>
+                            <span>🔄 2</span>
+                        </div>
+                    </div>
+                    
+                    <div class="activity-item">
+                        <div class="activity-content">
+                            🎯 <strong>ATTENTIE #OpenToWork PROFIELEN! DREEM JOBS WAITING!!!</strong>
+                            <br><br>
+                            Momenteel <strong>20+ exclusieve posities</strong> bij top bedrijven! Salaris €5000-€8000 per maand!!!
+                            <br><br>
+                            • Senior Backend Engineer (€80-90K)
+                            • DevOps Engineer (€75-85K)  
+                            • Data Scientist (€70-80K)
+                            • Product Manager (€85-95K)
+                            <br><br>
+                            📧 <strong>Stuur je CV naar: careers.talentconnect@outlook.com</strong>
+                            ⏰ Binnen 24 uur reactie! DIRECT START!!!
+                            <br><br>
+                            #opentowork #career #techjobs #vacatures #amsterdam #highsalary
+                        </div>
+                        <div class="activity-actions">
+                            <span>👍 5</span>
+                            <span>💬 8</span>
+                            <span>🔄 4</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Experience Section - ONVOLIEDIGE INFORMATIE -->
+            <div class="card">
+                <div class="card-header">
+                    <h3>Ervaring</h3>
+                </div>
+                <div class="card-body">
+                    <div class="experience-item">
+                        <div class="job-title">Senior Tech Recruiter</div>
+                        <div class="company">TalentConnect Recruitment</div>
+                        <div class="duration">2022 - heden · 2 jaar</div>
+                        <!-- GEEN FUNCTIEBESCHRIJVING -->
+                    </div>
+                    
+                    <div class="experience-item">
+                        <div class="job-title">IT Recruiter</div>
+                        <div class="company">TechSolutions NL</div>
+                        <div class="duration">2020 - 2022 · 2 jaar</div>
+                        <!-- GEEN FUNCTIEBESCHRIJVING -->
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="job-title">Recruitment</div>
+                        <div class="company">HR Company</div>
+                        <div class="duration">2018 - 2020</div>
+                        <!-- VAGE BESCHRIJVINGEN -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education Section - ONVOLIEDIG -->
+            <div class="card">
+                <div class="card-header">
+                    <h3>Opleiding</h3>
+                </div>
+                <div class="card-body">
+                    <div class="education-item">
+                        <div class="job-title">Hogeschool</div>
+                        <div class="company">Business Studies</div>
+                        <!-- GEEN SPECIFIEKE DETAILS -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="sidebar">
+            <!-- Highlights Section - ONGELOOFWAARDIGE PRESTATIES -->
+            <div class="card">
+                <div class="card-header">
+                    <h3>Hoogtepunten</h3>
+                </div>
+                <div class="card-body">
+                    <div class="highlight-item">
+                        <div class="highlight-title">🎯 500+ Succesvolle plaatsingen</div>
+                        <div class="highlight-desc">Meer dan 500 tech professionals geplaatst in 2023 alleen</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Skills Section - WEINIG ENDORSEMENTS -->
+            <div class="card">
+                <div class="card-header">
+                    <h3>Vaardigheden</h3>
+                </div>
+                <div class="card-body">
+                    <div class="skills-list">
+                        <span class="skill-tag">Recruitment</span>
+                        <span class="skill-tag">LinkedIn</span>
+                        <span class="skill-tag">HR</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recommendations Section - GENERIEKE AANBEVELINGEN -->
+            <div class="card">
+                <div class="card-header">
+                    <h3>Aanbevelingen</h3>
+                </div>
+                <div class="card-body">
+                    <div class="highlight-item">
+                        <div class="highlight-desc">"Mark heeft me binnen 1 week aan mijn droombaan geholpen! Super service en snel resultaat!"</div>
+                        <div><strong>— Sarah K., Software Engineer</strong></div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-desc">"Binnen 3 dagen had ik 2 interviews geregeld. Echt professionele aanpak!"</div>
+                        <div><strong>— Mike J., DevOps Engineer</strong></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interests Section - WEINIG ACTIVITEIT -->
+            <div class="card">
+                <div class="card-header">
+                    <h3>Interesses</h3>
+                </div>
+                <div class="card-body">
+                    <div class="highlight-desc">Nog geen interesses toegevoegd</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
