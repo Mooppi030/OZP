@@ -113,7 +113,7 @@
         }
         
         .connections {
-            color: #0a66c2;
+            color: #8c99a5;
             font-weight: 600;
             font-size: 14px;
             margin-bottom: 16px;
@@ -240,6 +240,26 @@
             font-weight: 600;
             text-decoration: none;
         }
+
+        .shared-connections {
+    margin: 12px 0;
+    padding: 12px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #0a66c2;
+}
+
+.shared-connections .highlight-title {
+    font-size: 14px;
+    margin-bottom: 4px;
+    color: #0a66c2;
+}
+
+.shared-connections .highlight-desc {
+    font-size: 14px;
+    color: rgba(0,0,0,0.8);
+    margin-bottom: 0;
+}
         
         .interests-grid {
             display: grid;
@@ -376,101 +396,33 @@
 <body>
     <div class="container">
         <div class="main-content">
-            <!-- Profile Header -->
             <div class="card profile-header">
-                <img src="https://www.pghtech.org/UserFiles/Image/Event%20Logos/Tech-Connect-LogoGREEN.png" class="profile-background" alt="Cover foto">
-                <div class="profile-info">
-                    <img src="https://media.licdn.com/dms/image/v2/D4E03AQHUVea1q3V1DQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1689080861873?e=1762387200&v=beta&t=EvwMvAHyr9LjyW5FGRUbxmjCmleUwRiUkLOTJihbhzU" class="profile-picture" alt="Profielfoto Lisa van Dijk">
-                    <h1>Lisa van Dijk</h1>
-                    <h2>Senior Talent Acquisition Specialist | Tech Recruitment | Connecting Top Talent</h2>
-                    <div class="location">Amsterdam, Noord-Holland, Nederland - Contactgegevens</div>
-                    <div class="connections">2.500+ connecties</div>
-                    <div class="action-buttons">
-                        <button class="btn btn-primary">Connectie maken</button>
-                        <button class="btn btn-secondary">Bericht</button>
-                        <button class="btn btn-outline">Meer</button>
-                    </div>
-                    <div>
-                        <strong>Actief op zoek naar:</strong> Senior Software Engineers, Product Managers, Data Scientists en UX Designers<br>
-                        Diverse topbedrijven in Amsterdam · Nu actief<br>
-                        <a href="#" class="view-all">Bekijk alle 12 openstaande posities</a>
-                    </div>
-                    <div style="margin-top: 12px;">
-                        <span class="premium-badge">💎 Profiel verbeterd met Premium</span>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- About Section -->
-            <div class="card">
-                <div class="card-header">
-                    <h3>Info</h3>
-                </div>
-                <div class="card-body">
-                    <p>Passionate Senior Tech Recruiter with 8+ years of experience connecting exceptional talent with innovative companies in the Amsterdam tech ecosystem. Specialized in scaling engineering teams for fast-growing startups and established tech giants.</p>
-                    <p>My mission is to build meaningful connections between ambitious professionals and forward-thinking organizations. I believe the right match can transform careers and drive business success.</p>
-                    <p>Currently focusing on: AI/ML roles, Cloud Infrastructure, FinTech, and SaaS products. Always open to discussing market trends, career opportunities, or sharing insights about the Amsterdam tech scene.</p>
-                    <p>Let's connect if you're looking for your next challenge or building an exceptional team!</p>
-                    <ul>
-                        <li>📧 lisa.vandijk@talentconnect.nl</li>
-                        <li>📱 +31 6 1234 5678</li>
-                        <li>🌐 www.talentconnect-amsterdam.nl</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <!-- Activity Section -->
-            <div class="card">
-                <div class="card-header">
-                    <h3>Activiteit</h3>
-                    <div>1.850 volgers</div>
-                </div>
-                <div class="card-body">
-                    <div class="section-title">Bijdragen</div>
-                    <div class="activity-item">
-                        <div class="activity-header">
-                            <div>
-                                <div><strong>Lisa van Dijk</strong> 💼 - 3 dagen</div>
-                                <div>Senior Talent Acquisition Specialist</div>
-                            </div>
-                        </div>
-                        <div class="activity-content">
-                            🚀 EXCLUSIEVE VACATURE: Senior Backend Engineer (Go/Rust) bij scale-up FinTech bedrijf! 
-                            <br><br>
-                            Op zoek naar engineers die willen bouwen aan next-generation payment infrastructure. Stack: Go, Kubernetes, AWS, PostgreSQL. 
-                            <br><br>
-                            • €85-95K + equity
-                            • Hybrid werken (2 dagen kantoor)
-                            • Impact op 2M+ gebruikers
-                            <br><br>
-                            Interesse? Stuur me een DM! #techjobs #amsterdam #backend #golang
-                        </div>
-                        <div class="activity-actions">
-                            <span>128 👍</span>
-                            <span>24 💬</span>
-                            <span>17 🔄</span>
-                        </div>
-                    </div>
-                    
-                    <div class="activity-item">
-                        <div class="activity-header">
-                            <div>
-                                <div><strong>Lisa van Dijk</strong> 💬 - 1 week</div>
-                                <div>Reactie op markttrends AI recruitment</div>
-                            </div>
-                        </div>
-                        <div class="activity-content">
-                            Interessante insights! In mijn praktijk zie ik inderdaad een verschuiving naar AI/ML roles, maar de basis blijft hetzelfde: menselijke connectie. Tools kunnen helpen, maar uiteindelijk gaat het om cultuurmatch en groeipotentieel. Benieuwd naar jullie ervaringen?
-                        </div>
-                        <div class="activity-actions">
-                            <span>42 👍</span>
-                            <span>8 💬</span>
-                        </div>
-                    </div>
-                    
-                    <a href="#" class="view-all">Alle bijdragen weergeven →</a>
-                </div>
-            </div>
+    <img src="https://www.pghtech.org/UserFiles/Image/Event%20Logos/Tech-Connect-LogoGREEN.png" class="profile-background" alt="Cover foto">
+    <div class="profile-info">
+        <img src="https://media.licdn.com/dms/image/v2/D4E03AQHUVea1q3V1DQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1689080861873?e=1762387200&v=beta&t=EvwMvAHyr9LjyW5FGRUbxmjCmleUwRiUkLOTJihbhzU" class="profile-picture" alt="Profielfoto Lisa van Dijk">
+        <h1>Lisa van Dijk</h1>
+        <h2>Senior Talent Acquisition Specialist | Tech Recruitment | Connecting Top Talent</h2>
+        <div class="location">Amsterdam, Noord-Holland, Nederland - Contactgegevens</div>
+        <div class="shared-connections">
+            <div class="highlight-title">🤝 GEDEELDE CONNECTIES</div>
+            <div class="highlight-desc">U heeft 28 gedeelde connecties met Lisa</div>
+        </div>
+        <div class="connections">2.500+ connecties</div>
+        <div class="action-buttons">
+            <button class="btn btn-primary">Connectie maken</button>
+            <button class="btn btn-secondary">Bericht</button>
+            <button class="btn btn-outline">Meer</button>
+        </div>
+        <div>
+            <strong>Actief op zoek naar:</strong> Senior Software Engineers, Product Managers, Data Scientists en UX Designers<br>
+            Diverse topbedrijven in Amsterdam · Nu actief<br>
+            <a href="#" class="view-all">Bekijk alle 12 openstaande posities</a>
+        </div>
+        <div style="margin-top: 12px;">
+            <span class="premium-badge">💎 Profiel verbeterd met Premium</span>
+        </div>
+    </div>
+</div>
             
             <!-- Experience Section -->
             <div class="card">
@@ -561,12 +513,6 @@
                         <div class="highlight-title">🎯 TOP RECRUITER 2023</div>
                         <div class="highlight-desc">Uitgeroepen tot Top Tech Recruiter door Amsterdam Tech Network</div>
                         <div class="highlight-desc">Top 5% van recruiters in Nederland</div>
-                    </div>
-                    
-                    <div class="highlight-item">
-                        <div class="highlight-title">🤝 GEDEELDE CONNECTIES</div>
-                        <div class="highlight-desc">U heeft 28 gedeelde connecties met Lisa</div>
-                        <div class="highlight-desc">Waaronder senior professionals bij Booking.com, Adyen en Mollie</div>
                     </div>
                 </div>
             </div>
