@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="nl" class="theme theme--mercado">
+<head>
+    <meta charset="utf-8">
+    <title>Mohamed Boussaid | Docent/tekstschrijver/copywriter | LinkedIn</title>
+    <meta name="description" content="Docent Nederlands en tekstschrijver/copywriter met expertise in onderwijs, content creatie en communicatie">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ffffff">
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/svg+xml" href="https://static.licdn.com/aero-v1/sc/h/akt4ae504epesldzj74dzred8">
+    <link rel="alternate icon" href="https://static.licdn.com/aero-v1/sc/h/8s162nmbcnfkg7a0k8nq9wwqo">
+    <link rel="mask-icon" href="https://static.licdn.com/aero-v1/sc/h/8a1a8xqjolkyjbf9n3i40oimj" color="#0a66c2">
+    
+    <!-- Styling -->
+    <link id="ui-theme" rel="stylesheet" href="https://static.licdn.com/aero-v1/sc/h/ev3prx6qwul6j3me07vap4ui1">
+    <link id="ui-theme-dark" rel="stylesheet" href="https://static.licdn.com/aero-v1/sc/h/aukoz4odnf7kc6nk7ds8gowwm">
+    <link rel="stylesheet" href="https://static.licdn.com/aero-v1/sc/h/5ruejucflr8mj4zy4tuvvyq24">
+    
+    <style>
+        body {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f2ef;
+            color: rgba(0,0,0,0.9);
+        }
+        
+        .container {
+            max-width: 1128px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            gap: 24px;
+        }
+        
+        .main-content {
+            flex: 1;
+        }
+        
+        .sidebar {
+            width: 300px;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 0 1px rgba(0,0,0,0.08);
+            margin-bottom: 16px;
+            overflow: hidden;
+        }
+        
+        .card-header {
+            padding: 16px 16px 0;
+        }
+        
+        .card-body {
+            padding: 0 16px 16px;
+        }
+        
+        .profile-header {
+            position: relative;
+        }
+        
+        .profile-background {
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+        }
+        
+        .profile-info {
+            padding: 0 24px 24px;
+            margin-top: -80px;
+        }
+        
+        .profile-picture {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            border: 4px solid white;
+            object-fit: cover;
+            object-position: center center;
+        }
+        
+        .name-container {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 8px;
+            flex-wrap: wrap;
+        }
+        
+        h1 {
+            font-size: 32px;
+            font-weight: 600;
+            margin: 0;
+            color: rgba(0,0,0,0.9);
+        }
+        
+        h2 {
+            font-size: 20px;
+            font-weight: 400;
+            margin: 0 0 16px;
+            color: rgba(0,0,0,0.9);
+        }
+        
+        h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin: 0 0 16px;
+            color: rgba(0,0,0,0.9);
+        }
+        
+        .location {
+            color: rgba(0,0,0,0.6);
+            font-size: 16px;
+            margin-bottom: 16px;
+        }
+        
+        .connections {
+            color: #787d83;
+            font-weight: 600;
+            font-size: 14px;
+            margin-bottom: 16px;
+        }
+        
+        .action-buttons {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 16px;
+        }
+        
+        .btn {
+            padding: 6px 16px;
+            border-radius: 16px;
+            font-weight: 600;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+        }
+        
+        .btn-primary {
+            background-color: #0a66c2;
+            color: white;
+        }
+        
+        .btn-secondary {
+            background-color: transparent;
+            color: #0a66c2;
+            border: 1px solid #0a66c2;
+        }
+        
+        .btn-outline {
+            background-color: transparent;
+            color: rgba(0,0,0,0.6);
+            border: 1px solid rgba(0,0,0,0.6);
+        }
+        
+        .section-title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+        
+        .highlight-item {
+            margin-bottom: 16px;
+        }
+        
+        .highlight-title {
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+        
+        .highlight-desc {
+            color: rgba(0,0,0,0.6);
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+        
+        .experience-item, .education-item {
+            margin-bottom: 16px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid rgba(0,0,0,0.08);
+        }
+        
+        .experience-item:last-child, .education-item:last-child {
+            border-bottom: none;
+        }
+        
+        .job-title {
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+        
+        .company {
+            color: rgba(0,0,0,0.9);
+            margin-bottom: 4px;
+        }
+        
+        .duration {
+            color: rgba(0,0,0,0.6);
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+        
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 16px;
+        }
+        
+        .skill-tag {
+            background-color: #eef3f8;
+            padding: 4px 8px;
+            border-radius: 16px;
+            font-size: 14px;
+        }
+        
+        .activity-item {
+            margin-bottom: 16px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid rgba(0,0,0,0.08);
+        }
+        
+        .activity-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+        
+        .activity-content {
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+        
+        .activity-actions {
+            display: flex;
+            gap: 16px;
+            color: rgba(0,0,0,0.6);
+            font-size: 14px;
+        }
+        
+        .view-all {
+            color: #0a66c2;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        
+        .interests-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+        
+        .interest-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px;
+            border: 1px solid rgba(0,0,0,0.08);
+            border-radius: 8px;
+        }
+        
+        .follow-btn {
+            color: #0a66c2;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        
+        .premium-badge {
+            background-color: #f8f9fa;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            padding: 8px 12px;
+            font-size: 14px;
+            color: #915907;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .warning-signs {
+            background-color: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 8px;
+            padding: 12px;
+            margin: 16px 0;
+            font-size: 14px;
+        }
+
+        .emotional-story {
+            background-color: #f0f8ff;
+            border-left: 4px solid #0a66c2;
+            padding: 12px 16px;
+            margin: 12px 0;
+            font-style: italic;
+        }
+
+        .copied-content {
+            background-color: #fff8e1;
+            border-left: 4px solid #ffc107;
+            padding: 12px 16px;
+            margin: 12px 0;
+            position: relative;
+        }
+
+        .copied-content::before {
+            content: "⚠️ Gekopieerde content";
+            font-size: 12px;
+            color: #856404;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        /* Mobiele styles */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                padding: 10px;
+                gap: 16px;
+            }
+            
+            .sidebar {
+                width: 100%;
+                order: 2;
+            }
+            
+            .main-content {
+                order: 1;
+            }
+            
+            .profile-info {
+                padding: 0 16px 16px;
+                margin-top: -60px;
+                text-align: center;
+            }
+            
+            .profile-picture {
+                width: 120px;
+                height: 120px;
+                margin: 0 auto 16px;
+            }
+            
+            h1 {
+                font-size: 24px;
+            }
+            
+            h2 {
+                font-size: 16px;
+            }
+            
+            h3 {
+                font-size: 18px;
+            }
+            
+            .action-buttons {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .btn {
+                font-size: 14px;
+                padding: 8px 12px;
+            }
+            
+            .card-body {
+                padding: 0 12px 12px;
+            }
+            
+            .card-header {
+                padding: 12px 12px 0;
+            }
+            
+            .interests-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .profile-background {
+                height: 150px;
+            }
+        }
+
+        /* Kleine mobiele schermen */
+        @media (max-width: 480px) {
+            .container {
+                padding: 8px;
+            }
+            
+            .profile-picture {
+                width: 100px;
+                height: 100px;
+            }
+            
+            .profile-info {
+                margin-top: -50px;
+            }
+            
+            h1 {
+                font-size: 20px;
+            }
+            
+            .action-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main-content">
+            <!-- Profile Header -->
+            <div class="card profile-header">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/00/Flag_of_Palestine.svg" class="profile-background" alt="Palestijnse vlag">
+                <div class="profile-info">
+                <img src="https://scontent-ams2-1.xx.fbcdn.net/v/t39.30808-6/517354480_1146263144212061_3090200756746375834_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_ohc=nOn2p-BrYgcQ7kNvwGP1I8V&_nc_oc=AdnVQKyjYwNwn8JJ7UA80xcRGnAtwui9RPEsSo_5DIRXHfnQLuvuiy_jmKmgDqGHQp8&_nc_zt=23&_nc_ht=scontent-ams2-1.xx&_nc_gid=uZ1_Xdangw_tSSiRtQNfDw&oh=00_Afe7Ys-takZ4TCHr2zNKOeLkwlSfcin9Ubgisw5p6Vt0Og&oe=68FC9EB4"class="profile-picture" alt="Profielfoto Yasmine Bouzaid">
+                    <div class="name-container">
+                        <h1>Yasmine Bouzaid</h1>
+                    </div>
+                    <h2>Docent/tekstschrijver/copywriter</h2>
+                    
+                    <div class="location">
+                        Hogeschool van Amsterdam<br>
+                        Amsterdam, Noord-Holland, Nederland<br>
+                        Contactgegevens
+                    </div>
+                    
+                    <div class="connections">500+ connecties</div>
+                    
+                    <div class="action-buttons">
+                        <button class="btn btn-primary">Connectie maken</button>
+                        <button class="btn btn-secondary">Bericht</button>
+                        <button class="btn btn-outline">Meer</button>
+                    </div>
+                    
+                    <div class="available-badge">
+                        Beschikbaar voor werk<br>
+                        <small>Functies voor Docent Nederlands en Tekstredacteur</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Services Section -->
+            <div class="card">
+                <div class="card-header">
+                    <h3>Services</h3>
+                </div>
+                <div class="card-body">
+                    <div class="services-list">
+                        <span class="service-tag">Ghostwriting - </span>
+                        <span class="service-tag">Copywriting - </span>
+                        <span class="service-tag">Schrijven - </span>
+                        <span class="service-tag">Technisch schrijven</span>
+                    </div>
+                    <a href="#" class="view-all">Services aanvragen</a> · 
+                    <a href="#" class="view-all">Alle services weergeven</a>
+                </div>
+            </div>
+
+            <!-- Activity Section -->
+            <div class="card">
+                <div class="card-header">
+                    <h3>Activiteit</h3>
+                    <div>890 volgers</div>
+                </div>
+                <div class="card-body">
+                    <div class="activity-item">
+                        <div class="activity-header">
+                            <div>
+                                <div><strong>Yasmine Bouzaid</strong> · 1 week geleden</div>
+                                <div>Docent/tekstschrijver/copywriter</div>
+                            </div>
+                        </div>
+                        <div class="activity-content">
+<p>De NOS schrijft alsof macht orde is, en orde vrede betekent.</p>
+<p>In hun bericht over het “staakt-het-vuren” klinkt Israël als de strateeg, Hamas als de barbaar, en de Palestijn als figurant die “naar huis trekt” — alsof dat huis nog bestaat.</p>
+<p>De kop <em>“Staakt-het-vuren in Gaza ingegaan, Palestijnen trekken naar huis”</em> lijkt vredig, maar dat is precies het probleem: taal verhult hier geweld. Woorden als “terugtrekking” en “volksverhuizing” klinken neutraal, maar dienen de macht.</p>
+<p>De NOS laat officiële stemmen schieten met scherp — generaals, premiers — terwijl Palestijnse ervaringen versplinteren tot losse bijschriften.</p>
+<p>Zo wordt framing een wapen: de taal ordent, maar wist uit.</p>
+<p>Israël heeft misschien muren gesloopt, maar geen volk gebroken.</p>
+<p>Militair kan men winnen; moreel, menselijk, historisch: niet.</p>
+<p>Dit is geen verslaggeving van vrede, maar verslaggeving die geweld leert praten.</p>
+                        </div>
+                        <div class="activity-actions">
+                            <span>56👍</span>
+                            <span>39💬</span>
+                            <span>12🔄</span>
+                        </div>
+                    </div>
+                    
+                    <div class="activity-item">
+                        <div class="activity-header">
+                            <div>
+                                <div><strong>Yasmine Bouzaid</strong> · 1 week geleden</div>
+                                <div>Docent/tekstschrijver/copywriter</div>
+                            </div>
+                        </div>
+                        <div class="activity-content">
+<p><strong>De schaamte van nuance</strong></p>
+<p>Er zijn momenten waarop stilte geen neutraliteit meer is, maar een keuze om niet te weten.</p>
+<p>Op de Dam zie je mensen spreken over vrede met de vlag van bezetting in hun hand.</p>
+<p>Ze noemen genocide ‘complex’, alsof complexiteit een excuus is voor lafheid, en nuance een ander woord voor onverschilligheid.</p>
+<p>De interviewer vraagt naar feiten en moraal, maar krijgt meningen zonder kennis en empathie zonder risico.</p>
+<p>We leven in een tijd waarin onschuldige doden discussie zijn geworden en moraal marketing heet.</p>
+<p>Geschiedenis vergeet niet wie keek, wie zweeg - en wie deed alsof hij niets zag.</p>
+                        </div>
+                        <div class="activity-actions">
+                            <span>68👍</span>
+                            <span>45💬</span> 
+                            <span>25🔄</span>
+                        </div>
+                    </div>
+                    
+                    <a href="#" class="view-all">Alle bijdragen weergeven</a>
+                </div>
+            </div>
+            
+            <!-- Experience Section -->
+            <div class="card">
+                <div class="card-header">
+                    <h3>Ervaring</h3>
+                </div>
+                <div class="card-body">
+                    <div class="experience-item">
+                        <div class="job-title">Docent Nederlands</div>
+                        <div class="company">Freelance</div>
+                        <div class="duration">aug. 2023 - heden · 2 jr 3 mnd</div>
+                        <div class="location">Amsterdam, Noord-Holland, Nederland</div>
+                    </div>
+                    
+                    <div class="experience-item">
+                        <div class="job-title">Tekstschrijver/copywriter</div>
+                        <div class="company">IPeP - Islamitische Pedagogen- & Psychologenpraktijk · Parttime</div>
+                        <div class="duration">mei 2020 - heden · 5 jr 6 mnd</div>
+                    </div>
+                    
+                    <div class="experience-item">
+                        <div class="job-title">Docent Nederlands</div>
+                        <div class="company">Mundus College</div>
+                        <div class="duration">jul. 2019 - jul. 2023 · 4 jr 1 mnd</div>
+                        <div class="location">Amsterdam en omgeving, Nederland</div>
+                    </div>
+                    
+                    <div class="experience-item">
+                        <div class="job-title">Docent NT2 - Opvangklassen</div>
+                        <div class="company">Montessori College Oost</div>
+                        <div class="duration">mrt. 2018 - jul. 2019 · 1 jr 5 mnd</div>
+                        <div class="location">Amsterdam en omgeving, Nederland</div>
+                        <div class="highlight-desc">Lesgeven aan nieuwkomers die in een "eerste opvangklas" (O-klas) aan hun Nederlandse schoolcarrière beginnen.</div>
+                    </div>
+                    
+                    <a href="#" class="view-all">Alle 11 ervaringen weergeven</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="sidebar">
+            <!-- Education Section -->
+            <div class="card">
+                <div class="card-header">
+                    <h3>Opleiding</h3>
+                </div>
+                <div class="card-body">
+                    <div class="education-item">
+                        <div class="job-title">Hogeschool van Rotterdam</div>
+                        <div class="company">Bachelor of Education - BEd, Cum Laude, Lerarenopleiding Nederlands 2e graads VO</div>
+                        <div class="duration">2014 - 2018</div>
+                        <div class="highlight-desc">Cijfer: 8,2</div>
+                    </div>
+                    
+                    <div class="education-item">
+                        <div class="job-title">Hogeschool van Utrecht</div>
+                        <div class="company">HBO Bachelor Media, Informatie en Communicatie</div>
+                        <div class="duration">2010 - 2014</div>
+                        <div class="highlight-desc">Activiteiten en verenigingen: Visie Workshop Digitale Leeromgeving Hogeschool van Utrecht</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Licenses & Certifications -->
+            <div class="card">
+                <div class="card-header">
+                    <h3>Licenties en certificaten</h3>
+                </div>
+                <div class="card-body">
+                    <div class="highlight-item">
+                        <div class="highlight-title">Propedeuse HBO lerarenopleiding Nederlands</div>
+                        <div class="highlight-desc">Hogeschool van Rotterdam</div>
+                        <div class="highlight-desc">Afgegeven op jun. 2016</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Volunteer Experience -->
+            <div class="card">
+                <div class="card-header">
+                    <h3>Vrijwilligerswerk</h3>
+                </div>
+                <div class="card-body">
+                    <div class="highlight-item">
+                        <div class="highlight-title">Auteur lessenserie</div>
+                        <div class="highlight-desc">PLOT26 · Onderwijs</div>
+                        <div class="highlight-desc">Auteur en bedenker van lessenserie "Klaas de voetballer".</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skills Section -->
+            <div class="card">
+                <div class="card-header">
+                    <h3>Vaardigheden</h3>
+                </div>
+                <div class="card-body">
+                    <div class="skills-list">
+                        <span class="skill-tag">Copywriting</span>
+                        <span class="skill-tag">Lesgeven</span>
+                        <span class="skill-tag">Nederlands</span>
+                        <span class="skill-tag">Content Creatie</span>
+                    </div>
+                    <a href="#" class="view-all">Alle 9 vaardigheden weergeven</a>
+                </div>
+            </div>
+
+            <!-- Languages -->
+            <div class="card">
+                <div class="card-header">
+                    <h3>Talen</h3>
+                </div>
+                <div class="card-body">
+                    <div class="highlight-item">
+                        <div class="highlight-title">Nederlands</div>
+                        <div class="highlight-desc">Moedertaal of tweetalig</div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-title">Arabisch</div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-title">Engels</div>
+                    </div>
+                    <a href="#" class="view-all">Alle 3 talen weergeven</a>
+                </div>
+            </div>
+
+            <!-- Interests -->
+            <div class="card">
+                <div class="card-header">
+                    <h3>Interesses</h3>
+                </div>
+                <div class="card-body">
+                    <div class="interest-item">
+                        <div>
+                            <div class="highlight-title">Zain Kahn</div>
+                            <div class="highlight-desc">Follow me to learn how you can leverage AI to boost your productivity and accelerate your career. Scaled products to 8 Million+ users and built the world's biggest AI newsletter with 1 Million+ readers.</div>
+                            <div class="highlight-desc">988.688 volgers</div>
+                        </div>
+                        <div class="follow-btn">Volgen</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
