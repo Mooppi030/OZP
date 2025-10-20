@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="nl" class="theme theme--mercado">
+<head>
+    <meta charset="utf-8">
+    <title>Lisa van Dijk | Talent Acquisition Specialist | LinkedIn</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="theme-color" content="#ffffff">
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/svg+xml" href="https://static.licdn.com/aero-v1/sc/h/akt4ae504epesldzj74dzred8">
+    <link rel="alternate icon" href="https://static.licdn.com/aero-v1/sc/h/8s162nmbcnfkg7a0k8nq9wwqo">
+    <link rel="mask-icon" href="https://static.licdn.com/aero-v1/sc/h/8a1a8xqjolkyjbf9n3i40oimj" color="#0a66c2">
+    
+    <!-- Styling -->
+    <link id="ui-theme" rel="stylesheet" href="https://static.licdn.com/aero-v1/sc/h/ev3prx6qwul6j3me07vap4ui1">
+    <link id="ui-theme-dark" rel="stylesheet" href="https://static.licdn.com/aero-v1/sc/h/aukoz4odnf7kc6nk7ds8gowwm">
+    <link rel="stylesheet" href="https://static.licdn.com/aero-v1/sc/h/5ruejucflr8mj4zy4tuvvyq24">
+    
+    <!-- Icons -->
+    <meta name="asset-url" class="mercado-icons-sprite" content="https://static.licdn.com/aero-v1/sc/h/2brfqc2ezdcl00afxrykl5mid">
+    
+    <style>
+        body {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f2ef;
+            color: rgba(0,0,0,0.9);
+        }
+        
+        .container {
+            max-width: 1128px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            gap: 24px;
+        }
+        
+        .main-content {
+            flex: 1;
+        }
+        
+        .sidebar {
+            width: 300px;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 0 1px rgba(0,0,0,0.08);
+            margin-bottom: 16px;
+            overflow: hidden;
+        }
+        
+        .card-header {
+            padding: 16px 16px 0;
+        }
+        
+        .card-body {
+            padding: 0 16px 16px;
+        }
+        
+        .profile-header {
+            position: relative;
+        }
+        
+        .profile-background {
+            height: 200px;
+            background-color: #e6e9ec;
+        }
+        
+        .profile-info {
+            padding: 0 24px 24px;
+            margin-top: -80px;
+        }
+        
+        .profile-picture {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 4px solid white;
+    object-fit: cover;
+    object-position: center center;
+}
+        
+        h1 {
+            font-size: 32px;
+            font-weight: 600;
+            margin: 0 0 8px;
+            color: rgba(0,0,0,0.9);
+        }
+        
+        h2 {
+            font-size: 20px;
+            font-weight: 400;
+            margin: 0 0 16px;
+            color: rgba(0,0,0,0.9);
+        }
+        
+        h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin: 0 0 16px;
+            color: rgba(0,0,0,0.9);
+        }
+        
+        .location {
+            color: rgba(0,0,0,0.6);
+            font-size: 16px;
+            margin-bottom: 16px;
+        }
+        
+        .connections {
+            color: #0a66c2;
+            font-weight: 600;
+            font-size: 14px;
+            margin-bottom: 16px;
+        }
+        
+        .action-buttons {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 16px;
+        }
+        
+        .btn {
+            padding: 6px 16px;
+            border-radius: 16px;
+            font-weight: 600;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+        }
+        
+        .btn-primary {
+            background-color: #0a66c2;
+            color: white;
+        }
+        
+        .btn-secondary {
+            background-color: transparent;
+            color: #0a66c2;
+            border: 1px solid #0a66c2;
+        }
+        
+        .btn-outline {
+            background-color: transparent;
+            color: rgba(0,0,0,0.6);
+            border: 1px solid rgba(0,0,0,0.6);
+        }
+        
+        .section-title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+        
+        .highlight-item {
+            margin-bottom: 16px;
+        }
+        
+        .highlight-title {
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+        
+        .highlight-desc {
+            color: rgba(0,0,0,0.6);
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+        
+        .experience-item, .education-item {
+            margin-bottom: 16px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid rgba(0,0,0,0.08);
+        }
+        
+        .experience-item:last-child, .education-item:last-child {
+            border-bottom: none;
+        }
+        
+        .job-title {
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+        
+        .company {
+            color: rgba(0,0,0,0.9);
+            margin-bottom: 4px;
+        }
+        
+        .duration {
+            color: rgba(0,0,0,0.6);
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+        
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 16px;
+        }
+        
+        .skill-tag {
+            background-color: #eef3f8;
+            padding: 4px 8px;
+            border-radius: 16px;
+            font-size: 14px;
+        }
+        
+        .activity-item {
+            margin-bottom: 16px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid rgba(0,0,0,0.08);
+        }
+        
+        .activity-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+        
+        .activity-content {
+            margin-bottom: 8px;
+        }
+        
+        .activity-actions {
+            display: flex;
+            gap: 16px;
+            color: rgba(0,0,0,0.6);
+            font-size: 14px;
+        }
+        
+        .view-all {
+            color: #0a66c2;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        
+        .interests-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+        
+        .interest-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px;
+            border: 1px solid rgba(0,0,0,0.08);
+            border-radius: 8px;
+        }
+        
+        .follow-btn {
+            color: #0a66c2;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        
+        .premium-badge {
+            background-color: #f8f9fa;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            padding: 8px 12px;
+            font-size: 14px;
+            color: #915907;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main-content">
+            <!-- Profile Header -->
+            <div class="card profile-header">
+                <img src="https://www.pghtech.org/UserFiles/Image/Event%20Logos/Tech-Connect-LogoGREEN.png" class="profile-background" alt="Cover foto">
+                <div class="profile-info">
+                    <img src="https://cdn.pixabay.com/photo/2023/12/07/03/50/ai-generated-8434748_1280.jpg" class="profile-picture" alt="Profielfoto Lisa van Dijk">
+                    <h1>Lisa van Dijk</h1>
+                    <h2>Senior Talent Acquisition Specialist | Tech Recruitment | Connecting Top Talent</h2>
+                    <div class="location">Amsterdam, Noord-Holland, Nederland - Contactgegevens</div>
+                    <div class="connections">2.500+ connecties</div>
+                    <div class="action-buttons">
+                        <button class="btn btn-primary">Connectie maken</button>
+                        <button class="btn btn-secondary">Bericht</button>
+                        <button class="btn btn-outline">Meer</button>
+                    </div>
+                    <div>
+                        <strong>Actief op zoek naar:</strong> Senior Software Engineers, Product Managers, Data Scientists en UX Designers<br>
+                        Diverse topbedrijven in Amsterdam · Nu actief<br>
+                        <a href="#" class="view-all">Bekijk alle 12 openstaande posities</a>
+                    </div>
+                    <div style="margin-top: 12px;">
+                        <span class="premium-badge">💎 Profiel verbeterd met Premium</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- About Section -->
+            <div class="card">
+                <div class="card-header">
+                    <h3>Info</h3>
+                </div>
+                <div class="card-body">
+                    <p>Passionate Senior Tech Recruiter with 8+ years of experience connecting exceptional talent with innovative companies in the Amsterdam tech ecosystem. Specialized in scaling engineering teams for fast-growing startups and established tech giants.</p>
+                    <p>My mission is to build meaningful connections between ambitious professionals and forward-thinking organizations. I believe the right match can transform careers and drive business success.</p>
+                    <p>Currently focusing on: AI/ML roles, Cloud Infrastructure, FinTech, and SaaS products. Always open to discussing market trends, career opportunities, or sharing insights about the Amsterdam tech scene.</p>
+                    <p>Let's connect if you're looking for your next challenge or building an exceptional team!</p>
+                    <ul>
+                        <li>📧 lisa.vandijk@talentconnect.nl</li>
+                        <li>📱 +31 6 1234 5678</li>
+                        <li>🌐 www.talentconnect-amsterdam.nl</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Activity Section -->
+            <div class="card">
+                <div class="card-header">
+                    <h3>Activiteit</h3>
+                    <div>1.850 volgers</div>
+                </div>
+                <div class="card-body">
+                    <div class="section-title">bijdragen</div>
+                    <ul>
+                        <li><strong>Commentaren</strong></li>
+                        <li><strong>Artikelen</strong></li>
+                        <li><strong>Vacatures</strong></li>
+                    </ul>
+                    
+                    <div class="activity-item">
+                        <div class="activity-header">
+                            <div>
+                                <div><strong>Lisa van Dijk</strong> 💼 - 3 dagen</div>
+                                <div>Senior Talent Acquisition Specialist</div>
+                            </div>
+                        </div>
+                        <div class="activity-content">
+                            🚀 EXCLUSIEVE VACATURE: Senior Backend Engineer (Go/Rust) bij scale-up FinTech bedrijf! 
+                            <br><br>
+                            Op zoek naar engineers die willen bouwen aan next-generation payment infrastructure. Stack: Go, Kubernetes, AWS, PostgreSQL. 
+                            <br><br>
+                            • €85-95K + equity
+                            • Hybrid werken (2 dagen kantoor)
+                            • Impact op 2M+ gebruikers
+                            <br><br>
+                            Interesse? Stuur me een DM! #techjobs #amsterdam #backend #golang
+                        </div>
+                        <div class="activity-actions">
+                            <span>128 👍</span>
+                            <span>24 💬</span>
+                            <span>17 🔄</span>
+                        </div>
+                    </div>
+                    
+                    <div class="activity-item">
+                        <div class="activity-header">
+                            <div>
+                                <div><strong>Lisa van Dijk</strong> 💬 - 1 week</div>
+                                <div>Reactie op markttrends AI recruitment</div>
+                            </div>
+                        </div>
+                        <div class="activity-content">
+                            Interessante insights! In mijn praktijk zie ik inderdaad een verschuiving naar AI/ML roles, maar de basis blijft hetzelfde: menselijke connectie. Tools kunnen helpen, maar uiteindelijk gaat het om cultuurmatch en groeipotentieel. Benieuwd naar jullie ervaringen?
+                        </div>
+                        <div class="activity-actions">
+                            <span>42 👍</span>
+                            <span>8 💬</span>
+                        </div>
+                    </div>
+                    
+                    <a href="#" class="view-all">Alle bijdragen weergeven →</a>
+                </div>
+            </div>
+            
+            <!-- Experience Section -->
+            <div class="card">
+                <div class="card-header">
+                    <h3>Ervaring</h3>
+                </div>
+                <div class="card-body">
+                    <div class="experience-item">
+                        <div class="job-title">Senior Talent Acquisition Specialist</div>
+                        <div class="company">TechConnect Recruitment - Fulltime</div>
+                        <div class="duration">mrt. 2022 - heden · 2 jr 10 mnd</div>
+                        <div class="location">Amsterdam, Nederland</div>
+                        <div class="skills-list">
+                            <span class="skill-tag">Tech Recruitment</span>
+                            <span class="skill-tag">Executive Search</span>
+                            <span class="skill-tag">Candidate Experience</span>
+                            <span class="skill-tag">+15 vaardigheden</span>
+                        </div>
+                    </div>
+                    
+                    <div class="experience-item">
+                        <div class="job-title">Tech Recruiter</div>
+                        <div class="company">StartupScale Partners - Fulltime</div>
+                        <div class="duration">jun. 2019 - feb. 2022 · 2 jr 9 mnd</div>
+                        <div class="location">Amsterdam, Nederland</div>
+                        <div class="skills-list">
+                            <span class="skill-tag">Startup Recruitment</span>
+                            <span class="skill-tag">Technical Screening</span>
+                            <span class="skill-tag">Employer Branding</span>
+                            <span class="skill-tag">+12 vaardigheden</span>
+                        </div>
+                    </div>
+                    
+                    <div class="experience-item">
+                        <div class="job-title">Recruitment Consultant</div>
+                        <div class="company">IT Talent Solutions</div>
+                        <div class="duration">jan. 2017 - mei 2019 · 2 jr 5 mnd</div>
+                        <div class="location">Utrecht, Nederland</div>
+                        <div class="skills-list">
+                            <span class="skill-tag">IT Recruitment</span>
+                            <span class="skill-tag">Client Management</span>
+                            <span class="skill-tag">Market Mapping</span>
+                            <span class="skill-tag">+10 vaardigheden</span>
+                        </div>
+                    </div>
+                    
+                    <a href="#" class="view-all">Alle 8 ervaringen weergeven →</a>
+                </div>
+            </div>
+            
+            <!-- Education Section -->
+            <div class="card">
+                <div class="card-header">
+                    <h3>Opleiding</h3>
+                </div>
+                <div class="card-body">
+                    <div class="education-item">
+                        <div class="job-title">Universiteit van Amsterdam</div>
+                        <div class="company">Master, Arbeids- en Organisatiepsychologie</div>
+                        <div class="duration">2014 - 2016</div>
+                    </div>
+                    
+                    <div class="education-item">
+                        <div class="job-title">Hogeschool van Amsterdam</div>
+                        <div class="company">Bachelor, Human Resource Management</div>
+                        <div class="duration">2010 - 2014</div>
+                    </div>
+                    
+                    <div class="education-item">
+                        <div class="job-title">HR Academy</div>
+                        <div class="company">Certified Tech Recruitment Specialist</div>
+                        <div class="duration">2018 - 2018</div>
+                    </div>
+                    
+                    <a href="#" class="view-all">Alle 5 opleidingen weergeven →</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="sidebar">
+            <!-- Highlights Section -->
+            <div class="card">
+                <div class="card-header">
+                    <h3>Hoogtepunten</h3>
+                </div>
+                <div class="card-body">
+                    <div class="highlight-item">
+                        <div class="highlight-title">🎯 TOP RECRUITER 2023</div>
+                        <div class="highlight-desc">Uitgeroepen tot Top Tech Recruiter door Amsterdam Tech Network</div>
+                        <div class="highlight-desc">Top 5% van recruiters in Nederland</div>
+                    </div>
+                    
+                    <div class="highlight-item">
+                        <div class="highlight-title">🤝 GEDEELDE CONNECTIES</div>
+                        <div class="highlight-desc">U heeft 28 gedeelde connecties met Lisa</div>
+                        <div class="highlight-desc">Waaronder senior professionals bij Booking.com, Adyen en Mollie</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Skills Section -->
+            <div class="card">
+                <div class="card-header">
+                    <h3>Vaardigheden</h3>
+                </div>
+                <div class="card-body">
+                    <div class="highlight-item">
+                        <div class="highlight-title">Tech Recruitment</div>
+                        <div class="highlight-desc">8 ervaringen bij TechConnect Recruitment en 3 andere bedrijven</div>
+                    </div>
+                    
+                    <div class="highlight-item">
+                        <div class="highlight-title">Candidate Sourcing</div>
+                        <div class="highlight-desc">Endorsed by 45+ professionals</div>
+                    </div>
+                    
+                    <div class="highlight-item">
+                        <div class="highlight-title">Technical Interviewing</div>
+                        <div class="highlight-desc">Endorsed by 38+ professionals</div>
+                    </div>
+                    
+                    <div class="skills-list">
+                        <span class="skill-tag">LinkedIn Recruiter</span>
+                        <span class="skill-tag">Greenhouse</span>
+                        <span class="skill-tag">Lever</span>
+                        <span class="skill-tag">Boolean Search</span>
+                        <span class="skill-tag">Employer Branding</span>
+                        <span class="skill-tag">Salary Negotiation</span>
+                    </div>
+                    
+                    <a href="#" class="view-all">Alle 27 vaardigheden weergeven →</a>
+                </div>
+            </div>
+            
+            <!-- Interests Section -->
+            <div class="card">
+                <div class="card-header">
+                    <h3>Interesses</h3>
+                </div>
+                <div class="card-body">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 16px;">
+                        <span>Bedrijven</span>
+                        <span>Groepen</span>
+                        <span>Nieuwsbrieven</span>
+                        <span>Onderwijsinstellingen</span>
+                    </div>
+                    
+                    <div class="interests-grid">
+                        <div class="interest-item">
+                            <div>
+                                <div class="highlight-title">Adyen</div>
+                                <div class="highlight-desc">15.803 volgers</div>
+                            </div>
+                            <div class="follow-btn">+ Volgen</div>
+                        </div>
+                        
+                        <div class="interest-item">
+                            <div>
+                                <div class="highlight-title">Booking.com</div>
+                                <div class="highlight-desc">89.445 volgers</div>
+                            </div>
+                            <div class="follow-btn">+ Volgen</div>
+                        </div>
+
+                        <div class="interest-item">
+                            <div>
+                                <div class="highlight-title">Mollie</div>
+                                <div class="highlight-desc">23.607 volgers</div>
+                            </div>
+                            <div class="follow-btn">+ Volgen</div>
+                        </div>
+                        
+                        <div class="interest-item">
+                            <div>
+                                <div class="highlight-title">Picnic</div>
+                                <div class="highlight-desc">38.229 volgers</div>
+                            </div>
+                            <div class="follow-btn">+ Volgen</div>
+                        </div>
+                    </div>
+                    
+                    <a href="#" class="view-all">Alle bedrijven weergeven →</a>
+                </div>
+            </div>
+
+            <!-- Recommendations Section -->
+            <div class="card">
+                <div class="card-header">
+                    <h3>Aanbevelingen</h3>
+                </div>
+                <div class="card-body">
+                    <div class="highlight-item">
+                        <div class="highlight-title">"Exceptional recruiter!"</div>
+                        <div class="highlight-desc">"Lisa helped me land my dream job at Adyen. Her guidance throughout the process was invaluable. She's responsive, knowledgeable, and truly cares about finding the right fit."</div>
+                        <div><strong>— Mark Janssen, Senior Software Engineer</strong></div>
+                    </div>
+                    
+                    <div class="highlight-item">
+                        <div class="highlight-title">"Best in the business"</div>
+                        <div class="highlight-desc">"We've worked with Lisa to fill multiple senior roles. She understands tech and culture fit perfectly. Highly recommended for any company scaling their tech team."</div>
+                        <div><strong>— Sarah de Wit, CTO TechScale Startup</strong></div>
+                    </div>
+                    
+                    <a href="#" class="view-all">3 meer aanbevelingen →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
