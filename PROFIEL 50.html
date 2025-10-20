@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en" class="theme theme--mercado">
+<head>
+    <meta charset="utf-8">
+    <title>Andre Jose | Venture Capital Investor | Barcelona | LinkedIn</title>
+    <meta name="description" content="Venture Capital Investor specializing in tech startups and blockchain projects">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ffffff">
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/svg+xml" href="https://static.licdn.com/aero-v1/sc/h/akt4ae504epesldzj74dzred8">
+    <link rel="alternate icon" href="https://static.licdn.com/aero-v1/sc/h/8s162nmbcnfkg7a0k8nq9wwqo">
+    <link rel="mask-icon" href="https://static.licdn.com/aero-v1/sc/h/8a1a8xqjolkyjbf9n3i40oimj" color="#0a66c2">
+    
+    <!-- Styling -->
+    <link id="ui-theme" rel="stylesheet" href="https://static.licdn.com/aero-v1/sc/h/ev3prx6qwul6j3me07vap4ui1">
+    <link id="ui-theme-dark" rel="stylesheet" href="https://static.licdn.com/aero-v1/sc/h/aukoz4odnf7kc6nk7ds8gowwm">
+    <link rel="stylesheet" href="https://static.licdn.com/aero-v1/sc/h/5ruejucflr8mj4zy4tuvvyq24">
+    
+    <style>
+        body {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f2ef;
+            color: rgba(0,0,0,0.9);
+        }
+        
+        .container {
+            max-width: 1128px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            gap: 24px;
+        }
+        
+        .main-content {
+            flex: 1;
+        }
+        
+        .sidebar {
+            width: 300px;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 0 1px rgba(0,0,0,0.08);
+            margin-bottom: 16px;
+            overflow: hidden;
+        }
+        
+        .card-header {
+            padding: 16px 16px 0;
+        }
+        
+        .card-body {
+            padding: 0 16px 16px;
+        }
+        
+        .profile-header {
+            position: relative;
+        }
+        
+        .profile-background {
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+        }
+        
+        .profile-info {
+            padding: 0 24px 24px;
+            margin-top: -80px;
+        }
+        
+        .profile-picture {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            border: 4px solid white;
+            object-fit: cover;
+            object-position: center center;
+        }
+        
+        h1 {
+            font-size: 32px;
+            font-weight: 600;
+            margin: 0 0 8px;
+            color: rgba(0,0,0,0.9);
+        }
+        
+        h2 {
+            font-size: 20px;
+            font-weight: 400;
+            margin: 0 0 16px;
+            color: rgba(0,0,0,0.9);
+        }
+        
+        h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin: 0 0 16px;
+            color: rgba(0,0,0,0.9);
+        }
+        
+        .location {
+            color: rgba(0,0,0,0.6);
+            font-size: 16px;
+            margin-bottom: 16px;
+        }
+        
+        .connections {
+            color: #8c99a5;
+            font-weight: 600;
+            font-size: 14px;
+            margin-bottom: 16px;
+        }
+        
+        .action-buttons {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 16px;
+        }
+        
+        .btn {
+            padding: 6px 16px;
+            border-radius: 16px;
+            font-weight: 600;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+        }
+        
+        .btn-primary {
+            background-color: #0a66c2;
+            color: white;
+        }
+        
+        .btn-secondary {
+            background-color: transparent;
+            color: #0a66c2;
+            border: 1px solid #0a66c2;
+        }
+        
+        .btn-outline {
+            background-color: transparent;
+            color: rgba(0,0,0,0.6);
+            border: 1px solid rgba(0,0,0,0.6);
+        }
+        
+        .section-title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+        
+        .highlight-item {
+            margin-bottom: 16px;
+        }
+        
+        .highlight-title {
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+        
+        .highlight-desc {
+            color: rgba(0,0,0,0.6);
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+        
+        .experience-item, .education-item {
+            margin-bottom: 16px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid rgba(0,0,0,0.08);
+        }
+        
+        .experience-item:last-child, .education-item:last-child {
+            border-bottom: none;
+        }
+        
+        .job-title {
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+        
+        .company {
+            color: rgba(0,0,0,0.9);
+            margin-bottom: 4px;
+        }
+        
+        .duration {
+            color: rgba(0,0,0,0.6);
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+        
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 16px;
+        }
+        
+        .skill-tag {
+            background-color: #eef3f8;
+            padding: 4px 8px;
+            border-radius: 16px;
+            font-size: 14px;
+        }
+        
+        .activity-item {
+            margin-bottom: 16px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid rgba(0,0,0,0.08);
+        }
+        
+        .activity-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+        
+        .activity-content {
+            margin-bottom: 8px;
+        }
+        
+        .activity-actions {
+            display: flex;
+            gap: 16px;
+            color: rgba(0,0,0,0.6);
+            font-size: 14px;
+        }
+        
+        .view-all {
+            color: #0a66c2;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        
+        .interests-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+        
+        .interest-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px;
+            border: 1px solid rgba(0,0,0,0.08);
+            border-radius: 8px;
+        }
+        
+        .follow-btn {
+            color: #0a66c2;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        
+        .premium-badge {
+            background-color: #f8f9fa;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            padding: 8px 12px;
+            font-size: 14px;
+            color: #915907;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .warning-signs {
+            background-color: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 8px;
+            padding: 12px;
+            margin: 16px 0;
+            font-size: 14px;
+        }
+
+        .red-flags {
+            background-color: #f8d7da;
+            border: 1px solid #f5c6cb;
+            border-radius: 8px;
+            padding: 12px;
+            margin: 16px 0;
+            font-size: 14px;
+        }
+
+        /* Mobiele styles */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                padding: 10px;
+                gap: 16px;
+            }
+            
+            .sidebar {
+                width: 100%;
+                order: 2;
+            }
+            
+            .main-content {
+                order: 1;
+            }
+            
+            .profile-info {
+                padding: 0 16px 16px;
+                margin-top: -60px;
+                text-align: center;
+            }
+            
+            .profile-picture {
+                width: 120px;
+                height: 120px;
+                margin: 0 auto 16px;
+            }
+            
+            h1 {
+                font-size: 24px;
+            }
+            
+            h2 {
+                font-size: 16px;
+            }
+            
+            h3 {
+                font-size: 18px;
+            }
+            
+            .action-buttons {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .btn {
+                font-size: 14px;
+                padding: 8px 12px;
+            }
+            
+            .card-body {
+                padding: 0 12px 12px;
+            }
+            
+            .card-header {
+                padding: 12px 12px 0;
+            }
+            
+            .interests-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .profile-background {
+                height: 150px;
+            }
+        }
+
+        /* Kleine mobiele schermen */
+        @media (max-width: 480px) {
+            .container {
+                padding: 8px;
+            }
+            
+            .profile-picture {
+                width: 100px;
+                height: 100px;
+            }
+            
+            .profile-info {
+                margin-top: -50px;
+            }
+            
+            h1 {
+                font-size: 20px;
+            }
+            
+            .action-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main-content">
+            <!-- Profile Header -->
+            <div class="card profile-header">
+                <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" class="profile-background" alt="Barcelona skyline">
+                <div class="profile-info">
+                    <!-- Stockfoto van een "succesvolle" zakenman -->
+                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" class="profile-picture" alt="Andre Jose profile">
+                    <h1>Andre Jose</h1>
+                    <h2>Venture Capital Investor | Startup Funding | Blockchain & Tech Investments</h2>
+                    <div class="location">Barcelona, Catalonia, Spain · <a href="#" style="color: #0a66c2;">andre.jose.investments@outlook.com</a></div>
+                    
+                    <!-- Weinig connecties voor een investeerder -->
+                    <div class="connections">127 connections</div>
+                    
+                    <div class="action-buttons">
+                        <button class="btn btn-primary">Connect</button>
+                        <button class="btn btn-secondary">Message</button>
+                        <button class="btn btn-outline">More</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- About Section - Vague and overly promotional -->
+            <div class="card">
+                <div class="card-header">
+                    <h3>About</h3>
+                </div>
+                <div class="card-body">
+                    <p>Seasoned venture capital investor with over 12 years of experience in funding innovative startups and blockchain projects. Currently managing a portfolio of 50+ companies across Europe and North America.</p>
+                    <p>Specialized in early-stage investments in  AI and blockchain technology. Passionate about supporting visionary entrepreneurs and disruptive technologies that shape the future.</p>
+                    <p>Currently seeking new investment opportunities with high growth potential. Minimum investment: €50,000. Maximum: €5M.</p>
+                    <p><strong>For investment proposals:</strong> andre.jose.capital@gmail.com</p>
+                    <p><strong>WhatsApp:</strong> +34 612 345 678</p>
+                </div>
+            </div>
+
+            <!-- Activity Section - Suspicious investment posts -->
+            <div class="card">
+                <div class="card-header">
+                    <h3>Activity</h3>
+                    <div>215 followers</div>
+                </div>
+                <div class="card-body">
+                    <div class="activity-item">
+                        <div class="activity-header">
+                            <div>
+                                <div><strong>Andre Jose</strong> 💼 - 2 days ago</div>
+                                <div>Venture Capital Investor</div>
+                            </div>
+                        </div>
+                        <div class="activity-content">
+                            🚀 <strong>INVESTMENT OPPORTUNITY ALERT!</strong> 🚀
+                            <br><br>
+                            My fund is currently evaluating 3 exclusive blockchain projects with 10-50x return potential! 
+                            <br><br>
+                            💰 <strong>What we're looking for:</strong>
+                            • Blockchain/Web3 startups
+                            • Pre-revenue with strong tech
+                            • Founding team with track record
+                            • Minimum 3M EUR valuation
+                            <br><br>
+                            📧 <strong>Send pitch deck to:</strong> andre.jose.deals@protonmail.com
+                            ⏰ <strong>Deadline:</strong> This Friday!
+                            <br><br>
+                            Don't miss this chance for serious funding! We move fast and can wire funds within 48 hours after due diligence.
+                            <br><br>
+                            #venturecapital #investing #blockchain #startups #funding #crypto
+                        </div>
+                        <div class="activity-actions">
+                            <span>5👍</span>
+                            <span>1💬</span>
+                            <span>0 🔄</span>
+                        </div>
+                    </div>
+                    
+                    <div class="activity-item">
+                        <div class="activity-header">
+                            <div>
+                                <div><strong>Andre Jose</strong> 💬 - 1 week ago</div>
+                            </div>
+                        </div>
+                        <div class="activity-content">
+                            💎 <strong>ATTENTION CRYPTO INVESTORS!</strong> 💎
+                            <br><br>
+                            Just closed a $2M investment in a revolutionary DeFi project! Early investors seeing 15x returns already!
+                            <br><br>
+                            🎯 <strong>Next opportunity:</strong> Private round for AI-powered trading platform
+                            • Minimum investment: €25,000
+                            • Expected ROI: 8-12x in 18 months
+                            • Limited to 20 investors only
+                            <br><br>
+                            🔥 <strong>Serious investors only!</strong>
+                            📧 Contact: crypto.andre.jose@tutanota.com
+                            📱 Telegram: @AndreJoseInvest
+                            <br><br>
+                            Don't wait - these opportunities don't last long! Due diligence documents available upon request.
+                            <br><br>
+                            #crypto #investing #defi #blockchain #trading #ai
+                        </div>
+                        <div class="activity-actions">
+                            <span>9 👍</span>
+                            <span>2 💬</span>
+                            <span>1 🔄</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Experience Section - Vague company information -->
+            <div class="card">
+                <div class="card-header">
+                    <h3>Experience</h3>
+                </div>
+                <div class="card-body">
+                    <div class="experience-item">
+                        <div class="job-title">Managing Partner & Investor</div>
+                        <div class="company">Mediterranean Venture Partners</div>
+                        <div class="duration">Jan 2018 - Present · 5 yrs 10 mos</div>
+                        <div class="location">Barcelona, Spain</div>
+                        <!-- No detailed description -->
+                        <div class="highlight-desc">Venture capital investments in tech startups</div>
+                    </div>
+                    
+                    <div class="experience-item">
+                        <div class="job-title">Senior Investment Analyst</div>
+                        <div class="company">Global Capital Investments</div>
+                        <div class="duration">Mar 2014 - Dec 2017 · 3 yrs 10 mos</div>
+                        <div class="location">London, United Kingdom</div>
+                        <!-- No detailed description -->
+                    </div>
+                    
+                    <div class="experience-item">
+                        <div class="job-title">Financial Advisor</div>
+                        <div class="company">Wealth Management Barcelona</div>
+                        <div class="duration">2011 - 2014</div>
+                        <!-- Vague dates and no location -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education Section - Generic or unverifiable -->
+            <div class="card">
+                <div class="card-header">
+                    <h3>Education</h3>
+                </div>
+                <div class="card-body">
+                    <div class="education-item">
+                        <div class="job-title">IESE Business School</div>
+                        <div class="company">Executive Education, Venture Capital</div>
+                        <div class="duration">2015</div>
+                    </div>
+                    
+                    <div class="education-item">
+                        <div class="job-title">University of Barcelona</div>
+                        <div class="company">Bachelor of Business Administration</div>
+                        <div class="duration">2007 - 2011</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="sidebar">
+            <!-- Highlights Section - Exaggerated claims -->
+            <div class="card">
+                <div class="card-header">
+                    <h3>Highlights</h3>
+                </div>
+                <div class="card-body">
+                    <div class="highlight-item">
+                        <div class="highlight-title">You both follow TechCrunch</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Skills Section - Generic skills with few endorsements -->
+            <div class="card">
+                <div class="card-header">
+                    <h3>Skills</h3>
+                </div>
+                <div class="card-body">
+                    <div class="skills-list">
+                        <span class="skill-tag">Venture Capital</span>
+                        <span class="skill-tag">Investment Analysis</span>
+                        <span class="skill-tag">Blockchain</span>
+                        <span class="skill-tag">Startup Funding</span>
+                        <span class="skill-tag">Financial Modeling</span>
+                        <span class="skill-tag">Due Diligence</span>
+                    </div>
+                    <!-- Few endorsements for an experienced investor -->
+                    <div class="highlight-desc">12 skills endorsed</div>
+                </div>
+            </div>
+
+            <!-- Recommendations Section - Generic recommendations -->
+            <div class="card">
+                <div class="card-header">
+                    <h3>Recommendations</h3>
+                </div>
+                <div class="card-body">
+                    <div class="highlight-item">
+                        <div class="highlight-desc">"Andre is a brilliant investor"</div>
+                        <div><strong>— Marco Silva, Startup Founder</strong></div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-desc">"Andre understands the investment landscape better than anyone I've worked with."</div>
+                        <div><strong>— Elena Rodriguez, Entrepreneur</strong></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interests Section - Limited variety -->
+            <div class="card">
+                <div class="card-header">
+                    <h3>Interests</h3>
+                </div>
+                <div class="card-body">
+                    <div class="interests-grid">
+                        <div class="interest-item">
+                            <div>
+                                <div class="highlight-title">Y Combinator</div>
+                                <div class="highlight-desc">895K followers</div>
+                            </div>
+                            <div class="follow-btn">+ Follow</div>
+                        </div>
+                        
+                        <div class="interest-item">
+                            <div>
+                                <div class="highlight-title">TechCrunch</div>
+                                <div class="highlight-desc">4.2M followers</div>
+                            </div>
+                            <div class="follow-btn">+ Follow</div>
+                        </div>
+                        
+                        <div class="interest-item">
+                            <div>
+                                <div class="highlight-title">Andreessen Horowitz</div>
+                                <div class="highlight-desc">568K followers</div>
+                            </div>
+                            <div class="follow-btn">+ Follow</div>
+                        </div>
+                        
+                        <div class="interest-item">
+                            <div>
+                                <div class="highlight-title">Coinbase</div>
+                                <div class="highlight-desc">2.1M followers</div>
+                            </div>
+                            <div class="follow-btn">+ Follow</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
