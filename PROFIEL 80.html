@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="nl" class="theme theme--mercado">
+<head>
+    <meta charset="utf-8">
+    <title>Laura L. | Campus Recruiter at Deloitte | LinkedIn</title>
+    <meta name="description" content="Campus Recruiter gespecialiseerd in het verbinden van top talent met Deloitte">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ffffff">
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/svg+xml" href="https://static.licdn.com/aero-v1/sc/h/akt4ae504epesldzj74dzred8">
+    <link rel="alternate icon" href="https://static.licdn.com/aero-v1/sc/h/8s162nmbcnfkg7a0k8nq9wwqo">
+    <link rel="mask-icon" href="https://static.licdn.com/aero-v1/sc/h/8a1a8xqjolkyjbf9n3i40oimj" color="#0a66c2">
+    
+    <!-- Styling -->
+    <link id="ui-theme" rel="stylesheet" href="https://static.licdn.com/aero-v1/sc/h/ev3prx6qwul6j3me07vap4ui1">
+    <link id="ui-theme-dark" rel="stylesheet" href="https://static.licdn.com/aero-v1/sc/h/aukoz4odnf7kc6nk7ds8gowwm">
+    <link rel="stylesheet" href="https://static.licdn.com/aero-v1/sc/h/5ruejucflr8mj4zy4tuvvyq24">
+    
+    <style>
+        body {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f2ef;
+            color: rgba(0,0,0,0.9);
+        }
+        
+        .container {
+            max-width: 1128px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            gap: 24px;
+        }
+        
+        .main-content {
+            flex: 1;
+        }
+        
+        .sidebar {
+            width: 300px;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 0 1px rgba(0,0,0,0.08);
+            margin-bottom: 16px;
+            overflow: hidden;
+        }
+        
+        .card-header {
+            padding: 16px 16px 0;
+        }
+        
+        .card-body {
+            padding: 0 16px 16px;
+        }
+        
+        .profile-header {
+            position: relative;
+        }
+        
+        .profile-background {
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+        }
+        
+        .profile-info {
+            padding: 0 24px 24px;
+            margin-top: -80px;
+        }
+        
+        .profile-picture {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            border: 4px solid white;
+            object-fit: cover;
+            object-position: center center;
+        }
+        
+        .name-container {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 8px;
+            flex-wrap: wrap;
+        }
+        
+        h1 {
+            font-size: 32px;
+            font-weight: 600;
+            margin: 0;
+            color: rgba(0,0,0,0.9);
+        }
+        
+        h2 {
+            font-size: 20px;
+            font-weight: 400;
+            margin: 0 0 16px;
+            color: rgba(0,0,0,0.9);
+        }
+        
+        h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin: 0 0 16px;
+            color: rgba(0,0,0,0.9);
+        }
+        
+        .location {
+            color: rgba(0,0,0,0.6);
+            font-size: 16px;
+            margin-bottom: 16px;
+        }
+        
+        .connections {
+            color: #8c99a5;
+            font-weight: 600;
+            font-size: 14px;
+            margin-bottom: 16px;
+        }
+        
+        .action-buttons {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 16px;
+        }
+        
+        .btn {
+            padding: 6px 16px;
+            border-radius: 16px;
+            font-weight: 600;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+        }
+        
+        .btn-primary {
+            background-color: #0a66c2;
+            color: white;
+        }
+        
+        .btn-secondary {
+            background-color: transparent;
+            color: #0a66c2;
+            border: 1px solid #0a66c2;
+        }
+        
+        .btn-outline {
+            background-color: transparent;
+            color: rgba(0,0,0,0.6);
+            border: 1px solid rgba(0,0,0,0.6);
+        }
+        
+        .section-title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+        
+        .highlight-item {
+            margin-bottom: 16px;
+        }
+        
+        .highlight-title {
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+        
+        .highlight-desc {
+            color: rgba(0,0,0,0.6);
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+        
+        .experience-item, .education-item {
+            margin-bottom: 16px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid rgba(0,0,0,0.08);
+        }
+        
+        .experience-item:last-child, .education-item:last-child {
+            border-bottom: none;
+        }
+        
+        .job-title {
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+        
+        .company {
+            color: rgba(0,0,0,0.9);
+            margin-bottom: 4px;
+        }
+        
+        .duration {
+            color: rgba(0,0,0,0.6);
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+        
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 16px;
+        }
+        
+        .skill-tag {
+            background-color: #eef3f8;
+            padding: 4px 8px;
+            border-radius: 16px;
+            font-size: 14px;
+        }
+        
+        .activity-item {
+            margin-bottom: 16px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid rgba(0,0,0,0.08);
+        }
+        
+        .activity-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+        
+        .activity-content {
+            margin-bottom: 8px;
+            line-height: 1.6;
+        }
+        
+        .activity-actions {
+            display: flex;
+            gap: 16px;
+            color: rgba(0,0,0,0.6);
+            font-size: 14px;
+        }
+        
+        .view-all {
+            color: #0a66c2;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        
+        .interests-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+        
+        .interest-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px;
+            border: 1px solid rgba(0,0,0,0.08);
+            border-radius: 8px;
+        }
+        
+        .follow-btn {
+            color: #0a66c2;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        
+        .premium-badge {
+            background-color: #f8f9fa;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            padding: 8px 12px;
+            font-size: 14px;
+            color: #915907;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .current-openings {
+            background-color: #f0f8ff;
+            border: 1px solid #0a66c2;
+            border-radius: 8px;
+            padding: 16px;
+            margin: 16px 0;
+        }
+
+        .opening-item {
+            margin-bottom: 12px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid rgba(0,0,0,0.08);
+        }
+
+        .opening-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+
+        /* Mobiele styles */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                padding: 10px;
+                gap: 16px;
+            }
+            
+            .sidebar {
+                width: 100%;
+                order: 2;
+            }
+            
+            .main-content {
+                order: 1;
+            }
+            
+            .profile-info {
+                padding: 0 16px 16px;
+                margin-top: -60px;
+                text-align: center;
+            }
+            
+            .profile-picture {
+                width: 120px;
+                height: 120px;
+                margin: 0 auto 16px;
+            }
+            
+            h1 {
+                font-size: 24px;
+            }
+            
+            h2 {
+                font-size: 16px;
+            }
+            
+            h3 {
+                font-size: 18px;
+            }
+            
+            .action-buttons {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .btn {
+                font-size: 14px;
+                padding: 8px 12px;
+            }
+            
+            .card-body {
+                padding: 0 12px 12px;
+            }
+            
+            .card-header {
+                padding: 12px 12px 0;
+            }
+            
+            .interests-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .profile-background {
+                height: 150px;
+            }
+        }
+
+        /* Kleine mobiele schermen */
+        @media (max-width: 480px) {
+            .container {
+                padding: 8px;
+            }
+            
+            .profile-picture {
+                width: 100px;
+                height: 100px;
+            }
+            
+            .profile-info {
+                margin-top: -50px;
+            }
+            
+            h1 {
+                font-size: 20px;
+            }
+            
+            .action-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main-content">
+            <!-- Profile Header -->
+            <div class="card profile-header">
+                <img src="https://www.relativity.com/sites/relativity/cache/file/DB260D6C-D7E3-47AF-AE349C22E27B795E_Wauto_H300.png" class="profile-background" alt="Cover foto">
+                <div class="profile-info">
+                    <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" class="profile-picture" alt="Profielfoto Laura van der Linden">
+                    
+                    <div class="name-container">
+                        <h1>Laura L.</h1>
+                    </div>
+                    
+                    <h2>Campus Recruiter at Deloitte</h2>
+                    
+                    <div class="location">
+                        Amsterdam, Nederland
+                    </div>
+                    
+                    <div class="connections">89 connecties</div>
+                    
+                    <div class="action-buttons">
+                        <button class="btn btn-primary">Connectie maken</button>
+                        <button class="btn btn-secondary">Bericht</button>
+                        <button class="btn btn-outline">Meer</button>
+                    </div>
+
+                    <div class="current-openings">
+                        <strong>💼 Momenteel wervend voor:</strong>
+                        <div class="opening-item">
+                            <strong>Senior Backend Engineer</strong> - €75-95K per jaar · Amsterdam · Hybrid
+                        </div>
+                        <div class="opening-item">
+                            <strong>Product Manager</strong> - €80-100K per jaar · Utrecht · Remote
+                        </div>
+                        <div class="opening-item">
+                            <strong>Data Scientist</strong> - €75-85K per jaar · Rotterdam · Remote 
+                        </div>
+                        <a href="#" class="view-all">Bekijk alle 8 openstaande posities</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- About Section -->
+            <div class="card">
+                <div class="card-header">
+                    <h3>Over</h3>
+                </div>
+                <div class="card-body">
+                    <p>Recruiter met 8+ jaar ervaring in het verbinden van talent met techbedrijven.</p>
+                    
+                    <p>Momenteel werk ik voor Deloitte om hun tech teams uit te breiden. Ik begeleid het volledige recruitment proces van sourcing tot onboarding.</p>
+                </div>
+            </div>
+
+            <!-- Activity Section -->
+            <div class="card">
+                <div class="card-header">
+                    <h3>Activiteit</h3>
+                </div>
+                <div class="card-body">
+                    <div class="activity-item">
+                        <div class="activity-header">
+                            <div>
+                                <div><strong>Laura L.</strong> 💼 - 1 dag geleden</div>
+                                <div>Tech Recruiter</div>
+                            </div>
+                        </div>
+                        <div class="activity-content">
+                            🔥 <strong>Deze kandidaat redde ik van toxische baas!</strong> 🔥
+                            <br><br>
+                            Gisteren sprak ik "Sarah" (26). Ze werkte voor een bedrijf waar ze niet naar het toilet mocht gaan tijdens een meeting.
+                            <br><br>
+                            <div class="emotional-story">
+                                "Laura, mijn wergever zei dat ik maar een luier moet dragen als ik moet gaan plassen..."
+                            </div>
+                            
+                            Haar salaris? $2200 bruto voor 60 uur werk. Ze huilde tijdens ons gesprek. Mijn bloed kookte!
+                            <br><br>
+                            💫 <strong>Binnen 20 uren</strong>
+                            • Regelde ik 3 interviews bij Deloitte
+                            • Kreeg ze een aanbod van $4200 + bonus
+                            • Schreef ik een boze e-mail naar haar ex-baas
+                            <br><br>
+                            Moral of the story: NOOIT laten misbruiken! Ik ben hier om helden te maken, niet om CV's door te sturen.
+                            <br><br>
+                            #recruitment #career #toxicworkplace #hr #hero
+                        </div>
+                        <div class="activity-actions">
+                            <span>12 👍</span>
+                            <span>1 💬</span>
+                            <span>0 🔄</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Gekopieerde virale content -->
+                    <div class="activity-item">
+                        <div class="activity-header">
+                            <div>
+                                <div><strong>Laura van Kampen</strong> 💼 - 3 dagen geleden</div>
+                            </div>
+                        </div>
+                        <div class="activity-content">
+                            <div class="copied-content">
+                                The most successful people I know:
+                                <br><br>
+                                • Wake up at 4 AM
+                                • Meditate for 2 hours
+                                • Cold plunge for 30 minutes
+                                • Read 1 book per week
+                                • Never watch TV
+                                • Journal every morning
+                                • Exercise 2 hours daily
+                                • Only eat organic food
+                                <br><br>
+                                If you're not doing this, you're not serious about success.
+                            </div>
+                            <br>
+                            So true! This is exactly what I tell all my candidates. Success is a choice! 💪
+                            <br><br>
+                            #success #mindset #grind #hustle #entrepreneur
+                        </div>
+                        <div class="activity-actions">
+                            <span>12 👍</span>
+                            <span>1 💬</span>
+                            <span>0 🔄</span>
+                        </div>
+                    </div>
+
+                    <!-- Emotioneel verhaal 2 -->
+                    <div class="activity-item">
+                        <div class="activity-header">
+                            <div>
+                                <div><strong>Laura van Kampen</strong> 💬 - 1 week geleden</div>
+                            </div>
+                        </div>
+                        <div class="activity-content">
+                            🚨 <strong>DEZE MANAGER WILDE EEN KANDIDAAT LATEN BETALEN VOOR ZIJN EIGEN ONTSLAG!</strong> 🚨
+                            <br><br>
+                            "Mike" werkte bij een bedrijf waar de CTO hem €500 liet betalen om "zijn contract te beëindigen" wegens "slechte performance". 
+                            <br><br>
+                            <div class="emotional-story">
+                                "Hij zei dat als ik niet betaalde, hij mijn reputatie in de industie zou vernietigen..."
+                            </div>
+                            
+                            Wat deed ik?
+                            • Belde meteen de CTO op
+                            • Schakelde een arbeidsjurist in
+                            • Regelde Mike een nieuwe job met 70% salarisverhoging
+                            • De CTO werd ontslagen!
+                            <br><br>
+                            Dit is geen recruitment. Dit is gerechtigheid. ⚖️
+                            <br><br>
+                            #justice #hr #recruitment #career #leadership
+                        </div>
+                        <div class="activity-actions">
+                            <span>15 👍</span>
+                            <span>3 💬</span>
+                            <span>1 🔄</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Experience Section -->
+            <div class="card">
+                <div class="card-header">
+                    <h3>Ervaring</h3>
+                </div>
+                <div class="card-body">
+                    <div class="experience-item">
+                        <div class="job-title">Campus Recruiter</div>
+                        <div class="company">Deloitte</div>
+                        <div class="duration">mrt. 2020 - heden · 5 jaar 8 maanden</div>
+                        <div class="location">Amsterdam, Nederland</div>
+                    </div>
+                    
+                    <div class="experience-item">
+                        <div class="job-title">Tech Recruiter</div>
+                        <div class="company">Apple Netherlands</div>
+                        <div class="duration">sep. 2017 - feb. 2020 · 2 jaar 6 maanden</div>
+                        <div class="location">Utrecht, Nederland</div>
+                    </div>
+                    
+                    <div class="experience-item">
+                        <div class="job-title">Recruitment Consultant</div>
+                        <div class="company">Microsoft Netherlands</div>
+                        <div class="duration">jun. 2015 - aug. 2017 · 2 jaar 3 maanden</div>
+                        <div class="location">Amsterdam, Nederland</div>
+                    </div>
+                    
+                    <a href="#" class="view-all">Alle 5 ervaringen weergeven</a>
+                </div>
+            </div>
+
+            <!-- Education Section -->
+            <div class="card">
+                <div class="card-header">
+                    <h3>Opleiding</h3>
+                </div>
+                <div class="card-body">
+                    <div class="education-item">
+                        <div class="job-title">Erasmus Universiteit Rotterdam</div>
+                        <div class="company">Master, Arbeids- en Organisatiepsychologie</div>
+                        <div class="duration">2013 - 2015</div>
+                        <div class="highlight-desc">Scriptie: "The impact of employer branding on the IT recruitement process"</div>
+                    </div>
+                    
+                    <div class="education-item">
+                        <div class="job-title">Universiteit van Amsterdam</div>
+                        <div class="company">Bachelor, Psychologie</div>
+                        <div class="duration">2009 - 2013</div>
+                    </div>
+                    
+                    <div class="education-item">
+                        <div class="job-title">HR Tech Academy</div>
+                        <div class="company">Certified Tech Recruitment Specialist</div>
+                        <div class="duration">2018</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="sidebar">
+            <!-- Skills Section -->
+            <div class="card">
+                <div class="card-header">
+                    <h3>Vaardigheden</h3>
+                </div>
+                <div class="card-body">
+                    <div class="highlight-item">
+                        <div class="highlight-title">Technical Recruitment</div>
+                    </div>
+                    
+                    <div class="highlight-item">
+                        <div class="highlight-title">Candidate Sourcing</div>
+                    </div>
+                    
+                    <div class="highlight-item">
+                        <div class="highlight-title">Interviewing</div>
+                    </div>
+                    
+                    <div class="skills-list">
+                        <span class="skill-tag">LinkedIn Recruiter</span>
+                        <span class="skill-tag">Greenhouse</span>
+                        <span class="skill-tag">Boolean Search</span>
+                        <span class="skill-tag">Market Mapping</span>
+                        <span class="skill-tag">Salary Negotiation</span>
+                        <span class="skill-tag">Employer Branding</span>
+                    </div>
+                    
+                    <a href="#" class="view-all">Alle 42 vaardigheden weergeven</a>
+                </div>
+            </div>
+
+            <!-- Interests Section -->
+            <div class="card">
+                <div class="card-header">
+                    <h3>Interesses</h3>
+                </div>
+                <div class="card-body">
+                    <div class="interests-grid">
+                        <div class="interest-item">
+                            <div>
+                                <div class="highlight-title">Adyen</div>
+                                <div class="highlight-desc">15.803 volgers</div>
+                            </div>
+                            <div class="follow-btn">+ Volgen</div>
+                        </div>
+                        
+                        <div class="interest-item">
+                            <div>
+                                <div class="highlight-title">Mollie</div>
+                                <div class="highlight-desc">23.607 volgers</div>
+                            </div>
+                            <div class="follow-btn">+ Volgen</div>
+                        </div>
+
+                        <div class="interest-item">
+                            <div>
+                                <div class="highlight-title">Picnic</div>
+                                <div class="highlight-desc">38.229 volgers</div>
+                            </div>
+                            <div class="follow-btn">+ Volgen</div>
+                        </div>
+                        
+                        <div class="interest-item">
+                            <div>
+                                <div class="highlight-title">Booking.com</div>
+                                <div class="highlight-desc">89.445 volgers</div>
+                            </div>
+                            <div class="follow-btn">+ Volgen</div>
+                        </div>
+                    </div>
+                    
+                    <a href="#" class="view-all">Alle bedrijven weergeven</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
