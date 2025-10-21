@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="nl" class="theme theme--mercado">
+<head>
+    <meta charset="utf-8">
+    <title>David van Kampen | Expert Recruiter bij ING Nederland</title>
+    <meta name="description" content="Passionate about connecting talent with opportunities | HR Innovator | Career Matchmaker">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ffffff">
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/svg+xml" href="https://static.licdn.com/aero-v1/sc/h/akt4ae504epesldzj74dzred8">
+    <link rel="alternate icon" href="https://static.licdn.com/aero-v1/sc/h/8s162nmbcnfkg7a0k8nq9wwqo">
+    <link rel="mask-icon" href="https://static.licdn.com/aero-v1/sc/h/8a1a8xqjolkyjbf9n3i40oimj" color="#0a66c2">
+    
+    <!-- Styling -->
+    <link id="ui-theme" rel="stylesheet" href="https://static.licdn.com/aero-v1/sc/h/ev3prx6qwul6j3me07vap4ui1">
+    <link id="ui-theme-dark" rel="stylesheet" href="https://static.licdn.com/aero-v1/sc/h/aukoz4odnf7kc6nk7ds8gowwm">
+    <link rel="stylesheet" href="https://static.licdn.com/aero-v1/sc/h/5ruejucflr8mj4zy4tuvvyq24">
+    
+    <style>
+        body {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f2ef;
+            color: rgba(0,0,0,0.9);
+        }
+        
+        .container {
+            max-width: 1128px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            gap: 24px;
+        }
+        
+        .main-content {
+            flex: 1;
+        }
+        
+        .sidebar {
+            width: 300px;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 0 1px rgba(0,0,0,0.08);
+            margin-bottom: 16px;
+            overflow: hidden;
+        }
+        
+        .card-header {
+            padding: 16px 16px 0;
+        }
+        
+        .card-body {
+            padding: 0 16px 16px;
+        }
+        
+        .profile-header {
+            position: relative;
+        }
+        
+        .profile-background {
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+            background-color: #e0e0e0;
+        }
+        
+        .profile-info {
+            padding: 0 24px 24px;
+            margin-top: -80px;
+        }
+        
+        .profile-picture {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            border: 4px solid white;
+            object-fit: cover;
+            object-position: center center;
+        }
+        
+        .name-container {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 8px;
+            flex-wrap: wrap;
+        }
+        
+        h1 {
+            font-size: 32px;
+            font-weight: 600;
+            margin: 0;
+            color: rgba(0,0,0,0.9);
+        }
+        
+        h2 {
+            font-size: 20px;
+            font-weight: 400;
+            margin: 0 0 16px;
+            color: rgba(0,0,0,0.9);
+        }
+        
+        h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin: 0 0 16px;
+            color: rgba(0,0,0,0.9);
+        }
+        
+        .location {
+            color: rgba(0,0,0,0.6);
+            font-size: 16px;
+            margin-bottom: 16px;
+        }
+        
+        .connections {
+            color: #636a70;
+            font-weight: 600;
+            font-size: 14px;
+            margin-bottom: 16px;
+        }
+        
+        .action-buttons {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 16px;
+        }
+        
+        .btn {
+            padding: 6px 16px;
+            border-radius: 16px;
+            font-weight: 600;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+        }
+        
+        .btn-primary {
+            background-color: #0a66c2;
+            color: white;
+        }
+        
+        .btn-secondary {
+            background-color: transparent;
+            color: #0a66c2;
+            border: 1px solid #0a66c2;
+        }
+        
+        .btn-outline {
+            background-color: transparent;
+            color: rgba(0,0,0,0.6);
+            border: 1px solid rgba(0,0,0,0.6);
+        }
+        
+        .section-title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+        
+        .highlight-item {
+            margin-bottom: 16px;
+        }
+        
+        .highlight-title {
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+        
+        .highlight-desc {
+            color: rgba(0,0,0,0.6);
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+        
+        .experience-item, .education-item {
+            margin-bottom: 16px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid rgba(0,0,0,0.08);
+        }
+        
+        .experience-item:last-child, .education-item:last-child {
+            border-bottom: none;
+        }
+        
+        .job-title {
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+        
+        .company {
+            color: rgba(0,0,0,0.9);
+            margin-bottom: 4px;
+        }
+        
+        .duration {
+            color: rgba(0,0,0,0.6);
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+        
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 16px;
+        }
+        
+        .skill-tag {
+            background-color: #eef3f8;
+            padding: 4px 8px;
+            border-radius: 16px;
+            font-size: 14px;
+        }
+        
+        .activity-item {
+            margin-bottom: 16px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid rgba(0,0,0,0.08);
+        }
+        
+        .activity-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+        
+        .activity-content {
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+        
+        .activity-actions {
+            display: flex;
+            gap: 16px;
+            color: rgba(0,0,0,0.6);
+            font-size: 14px;
+        }
+        
+        .view-all {
+            color: #0a66c2;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        
+        .interests-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+        
+        .interest-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px;
+            border: 1px solid rgba(0,0,0,0.08);
+            border-radius: 8px;
+        }
+        
+        .follow-btn {
+            color: #0a66c2;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        
+        .premium-badge {
+            background-color: #f8f9fa;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            padding: 8px 12px;
+            font-size: 14px;
+            color: #915907;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .no-activity {
+            text-align: center;
+            padding: 40px 20px;
+            color: rgba(0,0,0,0.6);
+        }
+
+        .no-activity-icon {
+            font-size: 48px;
+            margin-bottom: 16px;
+            opacity: 0.5;
+        }
+
+        .endorsement-info {
+            font-size: 14px;
+            color: rgba(0,0,0,0.6);
+            margin-bottom: 4px;
+        }
+
+        .endorsement-count {
+            font-size: 12px;
+            color: rgba(0,0,0,0.4);
+        }
+
+        .recommendation-tabs, .interest-tabs {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 16px;
+        }
+
+        .tab {
+            padding: 8px 16px;
+            cursor: pointer;
+            color: rgba(0,0,0,0.6);
+            border-bottom: 2px solid transparent;
+        }
+
+        .tab.active {
+            color: #0a66c2;
+            border-bottom-color: #0a66c2;
+            font-weight: 600;
+        }
+
+        .recommendation-header {
+            margin-bottom: 12px;
+        }
+
+        .connection-degree {
+            font-size: 12px;
+            color: rgba(0,0,0,0.6);
+            margin-top: 4px;
+        }
+
+        /* Mobiele styles */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                padding: 10px;
+                gap: 16px;
+            }
+            
+            .sidebar {
+                width: 100%;
+                order: 2;
+            }
+            
+            .main-content {
+                order: 1;
+            }
+            
+            .profile-info {
+                padding: 0 16px 16px;
+                margin-top: -60px;
+                text-align: center;
+            }
+            
+            .profile-picture {
+                width: 120px;
+                height: 120px;
+                margin: 0 auto 16px;
+            }
+            
+            h1 {
+                font-size: 24px;
+            }
+            
+            h2 {
+                font-size: 16px;
+            }
+            
+            h3 {
+                font-size: 18px;
+            }
+            
+            .action-buttons {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .btn {
+                font-size: 14px;
+                padding: 8px 12px;
+            }
+            
+            .card-body {
+                padding: 0 12px 12px;
+            }
+            
+            .card-header {
+                padding: 12px 12px 0;
+            }
+            
+            .interests-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .profile-background {
+                height: 150px;
+            }
+        }
+
+        /* Kleine mobiele schermen */
+        @media (max-width: 480px) {
+            .container {
+                padding: 8px;
+            }
+            
+            .profile-picture {
+                width: 100px;
+                height: 100px;
+            }
+            
+            .profile-info {
+                margin-top: -50px;
+            }
+            
+            h1 {
+                font-size: 20px;
+            }
+            
+            .action-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main-content">
+            <!-- Profile Header -->
+            <div class="card profile-header">
+                <div class="profile-background"></div>
+                <div class="profile-info">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" class="profile-picture" alt="Profielfoto David van Kampen">
+                    <div class="name-container">
+                        <h1>David van Kampen • 3e</h1>
+                    </div>
+                    
+                    <h2>Expert Recruiter bij ING Nederland</h2>
+                    <div class="location">Randstad</div>
+                    
+                    <div class="connections">500+ connecties</div>
+                    
+                    <div class="action-buttons">
+                        <button class="btn btn-primary">Connectie maken</button>
+                        <button class="btn btn-secondary">Bericht</button>
+                        <button class="btn btn-outline">Meer</button>
+                    </div>
+                </div>
+            </div>
+
+           <!-- Activity Section -->
+<div class="card">
+    <div class="card-header">
+        <h3>Activiteit</h3>
+        <div>2.452 volgers</div>
+    </div>
+    <div class="card-body">
+        <div class="activity-item">
+            <div class="activity-header">
+                <div>
+                    <div><strong>ING Nederland</strong> · 8 jaar geleden</div>
+                    <div>David heeft dit herpost</div>
+                </div>
+            </div>
+            <div class="activity-content">
+                💼 <strong>Dev Engineer – Citrix XenApp Specialist</strong>
+                <br><br>
+                Voor ons team in Zaandam zijn we op zoek naar een ervaren Citrix XenApp Specialist. Je wordt verantwoordelijk voor het beheer en de verdere ontwikkeling van onze Citrix omgeving.
+                <br><br>
+                🎯 <strong>Wat ga je doen:</strong>
+                • Ontwikkelen en beheren van Citrix XenApp omgeving
+                • Optimaliseren van performance en security
+                • Adviseren over nieuwe ontwikkelingen en verbeteringen
+                • Samenwerken met verschillende IT teams
+                <br><br>
+                📍 Zaandam, Noord-Holland · 🏢 Hybride werken
+                <br><br>
+                #Citrix #XenApp #DevEngineer #ING #Vacature
+            </div>
+            <div class="activity-actions">
+                <span>8 👍</span>
+                <span>3 💬</span>
+                <span>2 🔄</span>
+            </div>
+        </div>
+        
+        <div class="activity-item">
+            <div class="activity-header">
+                <div>
+                    <div><strong>ING Nederland</strong> · 1 dag geleden</div>
+                    <div>David heeft dit herpost</div>
+                </div>
+            </div>
+            <div class="activity-content">
+                Mooie vacature!
+                <br><br>
+                📊 <strong>Data Analist</strong>
+                <br><br>
+                Als Data Analist bij ING help je ons marketingteam met data-gedreven inzichten om onze klantstrategie te optimaliseren.
+                <br><br>
+                🔍 <strong>Jouw focus:</strong>
+                • Analyseren van marketingcampagne performance
+                • Ontwikkelen van klantsegmentaties
+                • Adviseren over data-gedreven marketingstrategie
+                • Werken met tools zoals SQL, Python en Tableau
+                <br><br>
+                📍 Zaandam, Noord-Holland · 💻 Data & Analytics team
+                <br><br>
+                #DataAnalytics #Marketing #ING #Vacature #DataDriven
+            </div>
+            <div class="activity-actions">
+                <span>8 👍</span>
+                <span>5 💬</span>
+                <span>3 🔄</span>
+            </div>
+        </div>
+
+        <div class="activity-item">
+            <div class="activity-header">
+                <div>
+                    <div><strong>ING Recruitment</strong> · 1 week geleden</div>
+                    <div>David heeft dit herpost</div>
+                </div>
+            </div>
+            <div class="activity-content">
+                🚀 <strong>Java Developer voor Innovatief Betalingsplatform</strong>
+                <br><br>
+                Voor ons innovatieve betalingsplatform zoeken we een ervaren Java Developer. Je werkt aan de core banking systemen die miljoenen transacties per dag verwerken.
+                <br><br>
+                💻 <strong>Technische stack:</strong>
+                • Java 11+, Spring Boot, Microservices
+                • Kafka, Docker, Kubernetes
+                • AWS cloud omgeving
+                • CI/CD met Jenkins en Git
+                <br><br>
+                📍 Amsterdam · ⚡ Scale-up environment binnen corporate
+                <br><br>
+                #Java #SpringBoot #Microservices #FinTech #ING
+            </div>
+            <div class="activity-actions">
+                <span>35 👍</span>
+                <span>7 💬</span>
+                <span>12 🔄</span>
+            </div>
+        </div>
+        
+        <a href="#" class="view-all">Alle bijdragen weergeven</a>
+    </div>
+</div>
+            
+            <!-- Experience Section -->
+            <div class="card">
+                <div class="card-header">
+                    <h3>Ervaring</h3>
+                </div>
+                <div class="card-body">
+                    <div class="experience-item">
+                        <div class="job-title">Adviseur Externe Inhuur</div>
+                        <div class="company">ING · Fulltime</div>
+                        <div class="duration">sep. 2014 - heden · 11 jr 2 mnd</div>
+                        <div class="location">Amsterdam · Hybride</div>
+                        <div class="highlight-desc">
+                            Verantwoordelijk voor het gehele inhuurproces van externe medewerkers binnen de IT-afdelingen Tech NL & Tech Infra en Zakelijk Lending. De eerste 2 jaar ben ik verantwoordelijk geweest voor de non-IT afdelingen zoals Hypotheken, Private Banking, Business Banking en Advieskantoren.
+                            <br><br>
+                            • Adviseren van inhurende ING-managers op gebied van inhuur interim professionals en leveranciers informeren<br>
+                            • Beoordelen cv's kandidaten<br>
+                            • Leveranciersmanagement, inclusief tariefonderhandelingen<br>
+                            • Administratieve werkzaamheden zoals verzorgen veiligheidschecks, maximale inhuurtermijnen bewaken, management rapportages<br>
+                            • Relatiebeheer ING-managers op HR-gebied<br>
+                            • Beoordelen en continu verbeteren HR-werkprocessen<br>
+                            • Vakbeurzen bezoeken en ING vertegenwoordigen<br>
+                            • Organiseren leveranciersbijeenkomsten
+                        </div>
+                    </div>
+                    
+                    <div class="experience-item">
+                        <div class="job-title">Adviseur Externe Inhuur</div>
+                        <div class="company">ING Nederland · Fulltime</div>
+                        <div class="duration">feb. 2012 - sep. 2014 · 2 jr 8 mnd</div>
+                        <div class="location">Amsterdam en omgeving, Nederland · Hybride</div>
+                        <div class="highlight-desc">
+                            Landelijk verantwoordelijk voor de werving van interim professionals binnen de afdelingen Hypotheken, Private Banking, Real Estate Finance, MKB en Grootbedrijf en Instellingen. Daarnaast ook verantwoordelijk voor de werving van Adviseurs Verkoopkantoren Zuid-Nederland.
+                            <br><br>
+                            • Management adviseren op gebied inhuur interim professionals en overige HR vragen<br>
+                            • Vacatures uitzetten bij leveranciers<br>
+                            • Beoordelen CV's voorgestelde kandidaten<br>
+                            • Leveranciersmanagement<br>
+                            • Organiseren leveranciersbijeenkomsten<br>
+                            • Verscheidene administratieve HR taken
+                        </div>
+                    </div>
+                    
+                    <div class="experience-item">
+                        <div class="job-title">Flexcoordinator</div>
+                        <div class="company">Accenture</div>
+                        <div class="duration">jun. 2004 - feb. 2012 · 7 jr 9 mnd</div>
+                        <div class="location">Zuid Nederland</div>
+                        <div class="highlight-desc">
+                            De Flex@projecten zijn outsourcing projecten van Accenture. Flex@ coördineert alle processen rondom de inzet van externe medewerkers binnen een aantal gerenommeerde bedrijven in Nederland. Deze projecten worden gecoördineerd door een Flexcoördinator.
+                            <br><br>
+                            • Verantwoordelijk voor de werving en selectie van kandidaten voor een grote Nederlandse Bank<br>
+                            • Accountmanagement Zakelijke en Particuliere afdelingen Zuid Nederland<br>
+                            • Voeren van sollicitatiegesprekken<br>
+                            • Voeren van beoordeling- en evaluatiegesprekken<br>
+                            • Management voorzien van advies op HR gebied<br>
+                            • Verscheidene administratieve HR taken<br>
+                            • Bewaken van SLA's en deadlines<br>
+                            • Verantwoordelijk voor alle HR taken en aanspreekpunt / vertrouwenspersoon voor deze medewerkers<br>
+                            • Tevens aanspreekpunt van alle managers
+                        </div>
+                    </div>
+                    
+                    <div class="experience-item">
+                        <div class="job-title">Intercedent</div>
+                        <div class="company">Randstad</div>
+                        <div class="duration">jan. 1999 - apr. 2004 · 5 jr 4 mnd</div>
+                        <div class="location">Den Haag</div>
+                        <div class="highlight-desc">
+                            Inhouse-intercedent, Nationale-Nederlanden en Nederlands Congres Centrum.
+                            <br><br>
+                            • Werven, selecteren en begeleiden van extern personeel<br>
+                            • Acquisitie en relatiebeheer<br>
+                            • Verzorgen van de personeels- en salarisadministratie
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education Section -->
+            <div class="card">
+                <div class="card-header">
+                    <h3>Opleiding</h3>
+                </div>
+                <div class="card-body">
+                    <div class="education-item">
+                        <div class="job-title">Amsterdams college voor Hotel en Gastronomie</div>
+                        <div class="company">Hotelschool</div>
+                        <div class="duration">1994 - 1999</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skills Section -->
+            <div class="card">
+                <div class="card-header">
+                    <h3>Vaardigheden</h3>
+                </div>
+                <div class="card-body">
+                    <div class="highlight-item">
+                        <div class="highlight-title">Human Resources</div>
+                        <div class="highlight-desc">
+                            <div class="endorsement-info">
+                                Onderschreven door 5 collega's bij ING
+                            </div>
+                            <div class="endorsement-count">11 onderschrijvingen</div>
+                        </div>
+                    </div>
+                    
+                    <div class="highlight-item">
+                        <div class="highlight-title">Sourcing</div>
+                        <div class="highlight-desc">
+                            <div class="endorsement-info">
+                                Onderschreven door Jaap Overvoorde, die hier erg goed in is
+                            </div>
+                            <div class="endorsement-info">
+                                Onderschreven door 4 collega's bij ING
+                            </div>
+                            <div class="endorsement-count">11 onderschrijvingen</div>
+                        </div>
+                    </div>
+                    
+                    <a href="#" class="view-all">Alle 16 vaardigheden weergeven</a>
+                </div>
+            </div>
+
+            <!-- Recommendations Section -->
+            <div class="card">
+                <div class="card-header">
+                    <h3>Aanbevelingen</h3>
+                    <div class="recommendation-tabs">
+                        <span class="tab active">Ontvangen</span>
+                        <span class="tab">Gegeven</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="highlight-item">
+                        <div class="recommendation-header">
+                            <div>
+                                <div class="highlight-title">Micha Lekawael</div>
+                                <div class="highlight-desc">Head of Talent Acquisition & Employer Branding MediaMarkt Benelux | Retail | Experience Electronics "Experience what's possible!"</div>
+                                <div class="connection-degree">3e · 23 mei 2018, Micha was de leidinggevende van David</div>
+                            </div>
+                        </div>
+                        <div class="highlight-desc">
+                            David is een zeer professionele Recruiter die onwijs veel waarde heeft toegevoegd aan de Recruitment projecten voor IT flex professionals binnen ING. Hij is daadkrachtig, communicatief sterk, een sterk accountmanager, georganiseerd en een hele prettige en sociale collega. Ik zou David altijd aanbevelen voor HR trajecten met recruitment raakvlakken en/of redelijk complexe recruitment projecten binnen de zakelijke dienstverlening. David, dank voor al je werk en inzet en nog veel succes binnen ING. Helaas moesten we de rest van Talent Acquisition outsourcen naar IBM, anders hadden we zeker nog veel langer samengewerkt!
+                        </div>
+                    </div>
+                    
+                    <div class="highlight-item">
+                        <div class="recommendation-header">
+                            <div>
+                                <div class="highlight-title">Ingrid Heemskerk</div>
+                                <div class="highlight-desc">Sr Agile Transformatie Consultant ✤ Trainer ✤ Interim Manager ✤ Coach Management, Teams&Talent ✤</div>
+                                <div class="connection-degree">2e · 31 oktober 2016, Ingrid heeft samengewerkt met David, maar in verschillende teams</div>
+                            </div>
+                        </div>
+                        <div class="highlight-desc">
+                            De afgelopen jaren heb ik regelmatig prettig met David samengewerkt. Hij is enthousiast, zeer leverbetrouwbaar en kent zijn vak. David denkt pro actief mee (zo hebben we oa een Young Professional programma opgezet) en is communicatief vaardig. Ik kan David van harte aanbevelen.
+                        </div>
+                    </div>
+                    
+                    <a href="#" class="view-all">Alle 3 ontvangen aanbevelingen weergeven</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="sidebar">
+            
+            <!-- Additional Skills -->
+            <div class="card">
+                <div class="card-header">
+                    <h3>Vaardigheden</h3>
+                </div>
+                <div class="card-body">
+                    <div class="skills-list">
+                        <span class="skill-tag">Recruitment</span>
+                        <span class="skill-tag">HR</span>
+                        <span class="skill-tag">Talent Acquisition</span>
+                        <span class="skill-tag">Sourcing</span>
+                        <span class="skill-tag">Leveranciersmanagement</span>
+                        <span class="skill-tag">Interim Management</span>
+                        <span class="skill-tag">Accountmanagement</span>
+                        <span class="skill-tag">HR Processen</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Languages Section -->
+            <div class="card">
+                <div class="card-header">
+                    <h3>Talen</h3>
+                </div>
+                <div class="card-body">
+                    <div class="highlight-item">
+                        <div class="highlight-title">Duits</div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-title">Engels</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interests Section -->
+            <div class="card">
+                <div class="card-header">
+                    <h3>Interesses</h3>
+                    <div class="interest-tabs">
+                        <span class="tab active">Bedrijven</span>
+                        <span class="tab">Groepen</span>
+                        <span class="tab">Nieuwsbrieven</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="interests-grid">
+                        <div class="interest-item">
+                            <div>
+                                <div class="highlight-title">ING Nederland</div>
+                                <div class="highlight-desc">197.453 volgers</div>
+                            </div>
+                            <div class="follow-btn">Volgen</div>
+                        </div>
+                        
+                        <div class="interest-item">
+                            <div>
+                                <div class="highlight-title">Cegeka</div>
+                                <div class="highlight-desc">163.863 volgers</div>
+                            </div>
+                            <div class="follow-btn">Volgen</div>
+                        </div>
+                    </div>
+                    
+                    <a href="#" class="view-all">Alle bedrijven weergeven</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
